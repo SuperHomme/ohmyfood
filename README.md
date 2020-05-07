@@ -1,4 +1,4 @@
 # ohmyfood
-## descritpion du projet
-ceci est un projet OpenClassroom
+## description du projet
+ceci est un projet **OpenClassroom**
 
