@@ -8,8 +8,8 @@
 $primary-color: #589d88
 $secundary-color: #fccb45
 $main-font: "Montserrat"
-// fond, titre, sous-titre
-$la_note_enchantee: #fce2de, "Devonshire", "Segoe Print"
+// couleur fond, police titre, police sous-titre, couleur texte 1, couleur texte 2
+$la_note_enchantee: #fce2de, "Devonshire", "Segoe Print", rgb(56,22,26)
 $le_chic_a_la_francaise: rgb(248, 221, 246), "Kurale", "Abril Fatface"
 $la_palette_du_gout: #ffffff, "Kaushan Script", "Segoe Print"
 $le_delice_des_papilles: #eceeee, "Dancing Script", "Segoe Print"
@@ -41,26 +41,23 @@ main
         flex-direction: row
         flex-wrap: wrap
         justify-content: space-between
-        font-size: 2rem
-        article
-            display: flex
-            justify-content: center
-            align-items: center
-            flex-direction: column
-            margin: 20px
+        font-size: 2rem            
 
 .menu
     width: 400px
     height: 400px
     box-shadow: 1px 1px 5px grey
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin: 20px
     &__la_note_enchantee
         background-color: nth($la_note_enchantee, 1)
         font-family: nth($la_note_enchantee, 2)
-        h2
-            color: rgb(56,22,26)
+        color: nth($la_note_enchantee, 4)
         p
             font-family: nth($la_note_enchantee, 3)
-            color: rgb(56,22,26)
     &__le_chic_a_la_francaise
         background-color: nth($le_chic_a_la_francaise, 1)
         font-family: nth($le_chic_a_la_francaise, 2)
@@ -112,9 +109,24 @@ main
     p
         margin: 0
 
+.menu-carte
+    background-color: nth($la_note_enchantee, 1)
+    font-family: nth($la_note_enchantee, 3)
+    color: nth($la_note_enchantee, 4)
+    box-shadow: 1px 1px 5px grey
+    h2
+        font-family: nth($la_note_enchantee, 2)
+        font-size: 3rem
+    ul
+        list-style: none
+        padding-inline-start: 0
+    span
+        display: block
+        font-weight: bold
+
 footer
     @extend header
-    position: sticky
+    position: fixed // pb : cache le bouton ; sticky ?
     width: 100%
     display: flex
     justify-content: space-between

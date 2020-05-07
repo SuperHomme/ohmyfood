@@ -31,25 +31,22 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 2rem; }
-    main section article {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin: 20px; }
 
 .menu {
   width: 400px;
   height: 400px;
-  box-shadow: 1px 1px 5px grey; }
+  box-shadow: 1px 1px 5px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px; }
   .menu__la_note_enchantee {
     background-color: #fce2de;
-    font-family: "Devonshire"; }
-    .menu__la_note_enchantee h2 {
-      color: #38161a; }
+    font-family: "Devonshire";
+    color: #38161a; }
     .menu__la_note_enchantee p {
-      font-family: "Segoe Print";
-      color: #38161a; }
+      font-family: "Segoe Print"; }
   .menu__le_chic_a_la_francaise {
     background-color: #f8ddf6;
     font-family: "Kurale"; }
@@ -101,8 +98,23 @@ main {
   .btn p {
     margin: 0; }
 
+.menu-carte {
+  background-color: #fce2de;
+  font-family: "Segoe Print";
+  color: #38161a;
+  box-shadow: 1px 1px 5px grey; }
+  .menu-carte h2 {
+    font-family: "Devonshire";
+    font-size: 3rem; }
+  .menu-carte ul {
+    list-style: none;
+    padding-inline-start: 0; }
+  .menu-carte span {
+    display: block;
+    font-weight: bold; }
+
 footer {
-  position: sticky;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
