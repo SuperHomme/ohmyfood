@@ -1,0 +1,122 @@
+@font-face // regular
+    font-family: "Segoe Print"
+    src: url('../font/SegoePrint.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+//variable
+$primary-color: #589d88
+$secundary-color: #fccb45
+$main-font: "Montserrat"
+// fond, titre, sous-titre
+$la_note_enchantee: #fce2de, "Devonshire", "Segoe Print"
+$le_chic_a_la_francaise: rgb(248, 221, 246), "Kurale", "Abril Fatface"
+$la_palette_du_gout: #ffffff, "Kaushan Script", "Segoe Print"
+$le_delice_des_papilles: #eceeee, "Dancing Script", "Segoe Print"
+
+body
+    margin: 0
+    padding: 0
+    text-align: center
+    color: $secundary-color
+    font-family: $main-font, sans-serif
+    a
+        text-decoration: none
+        color: inherit
+
+header
+    background-color: $primary-color
+    color: $secundary-color
+    h1
+        font-size: 7rem
+
+main
+    display: flex
+    width: 50%
+    margin: auto
+    flex-direction: column
+    align-items: center
+    section
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        font-size: 2rem
+        article
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            margin: 20px
+
+.menu
+    width: 400px
+    height: 400px
+    box-shadow: 1px 1px 5px grey
+    &__la_note_enchantee
+        background-color: nth($la_note_enchantee, 1)
+        font-family: nth($la_note_enchantee, 2)
+        h2
+            color: rgb(56,22,26)
+        p
+            font-family: nth($la_note_enchantee, 3)
+            color: rgb(56,22,26)
+    &__le_chic_a_la_francaise
+        background-color: nth($le_chic_a_la_francaise, 1)
+        font-family: nth($le_chic_a_la_francaise, 2)
+        h2
+            background-color: #f3ec78
+            background: linear-gradient(22.5deg, #c57411, #6e4ccd)
+            background-size: 100%
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
+        p
+            font-family: nth($le_chic_a_la_francaise, 3)
+            color: #c57411
+    &__le_delice_des_papilles
+        background-color: nth($le_delice_des_papilles, 1)
+        font-family: nth($le_delice_des_papilles, 2)
+        h2
+            background-color: #f3ec78
+            background: linear-gradient(45deg, #0021db, #249df9)
+            background-size: 100%
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
+        p
+            font-family: nth($la_palette_du_gout, 3)
+            color: #249df9
+    &__la_palette_du_gout
+        background-color: nth($la_palette_du_gout, 1)
+        font-family: nth($la_palette_du_gout, 2)
+        h2
+            background-color: #f3ec78
+            background: linear-gradient(45deg, #3d923a, #bfff80)
+            background-size: 100%
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
+        p
+            font-family: nth($la_palette_du_gout, 3)
+            color: #3d923a
+
+.btn
+    background-color: $primary-color
+    border-radius: 1rem
+    margin: 1.5rem
+    padding: 0.5rem 2rem
+    p
+        margin: 0
+
+footer
+    @extend header
+    position: sticky
+    width: 100%
+    display: flex
+    justify-content: space-between
+    bottom: 0
+    font-size: 3rem
