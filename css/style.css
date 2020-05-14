@@ -47,23 +47,32 @@ header, footer {
 main {
   display: flex;
   width: 80%;
-  margin: auto;
-  margin-bottom: 7rem;
-  margin-top: 1rem;
+  margin: auto; }
+
+.page-menu main {
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 7rem; }
 
 .menus {
-  width: 400px;
+  width: 255px;
   height: 400px;
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin: 0 0 3rem 1rem; }
+  .menus h2 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.5rem; }
+  .menus p {
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 1.5rem; }
   .menus__la_note_enchantee {
     background-color: #f7e0dc;
     font-family: "Devonshire";
@@ -71,7 +80,7 @@ main {
     .menus__la_note_enchantee p {
       font-family: "Segoe Print"; }
   .menus__le_chic_a_la_francaise {
-    background-color: #f8ddf6;
+    background-color: #fdf5fd;
     font-family: "Kurale"; }
     .menus__le_chic_a_la_francaise h2 {
       background-color: #f3ec78;
@@ -85,7 +94,7 @@ main {
       font-family: "Abril Fatface";
       color: #c57411; }
   .menus__le_delice_des_papilles {
-    background-color: #eceeee;
+    background-color: #f9f9f9;
     font-family: "Dancing Script"; }
     .menus__le_delice_des_papilles h2 {
       background-color: #f3ec78;
@@ -99,7 +108,7 @@ main {
       font-family: "Segoe Print";
       color: #249df9; }
   .menus__la_palette_du_gout {
-    background-color: #ffffff;
+    background-color: #fdfffd;
     font-family: "Kaushan Script"; }
     .menus__la_palette_du_gout h2 {
       background-color: #f3ec78;
@@ -112,13 +121,12 @@ main {
     .menus__la_palette_du_gout p {
       font-family: "Segoe Print";
       color: #3d923a; }
-  .menus h2 {
-    font-weight: normal; }
 
 .btn {
   background-color: #589d88;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin: 1.5rem;
+  margin-top: 0;
   padding: 0.5rem 2rem;
   font-size: 1.75rem; }
   .btn p {
@@ -133,11 +141,24 @@ main {
   padding: 2rem 10%;
   font-size: 0.7rem; }
   .carte__titre {
-    margin: auto; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem; }
+    .carte__titre .croche {
+      width: 3.5rem; }
   .carte__header {
     color: #353535;
     font-family: "Helvetica Neue";
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    margin-top: 1rem; }
+  .carte__rappel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem; }
+    .carte__rappel .croche {
+      width: 2rem; }
   .carte h2 {
     margin: 1rem; }
   .carte h3, .carte h4 {
@@ -148,7 +169,7 @@ main {
     font-style: normal; }
   .carte h4 {
     font-size: 1.5rem;
-    margin: 0; }
+    margin: 0 0.5rem; }
   .carte h5 {
     font-size: 1rem;
     margin: 0;
@@ -159,13 +180,34 @@ main {
   .carte li {
     display: flex;
     justify-content: space-between;
-    margin: 0.5rem; }
+    margin: 0.5rem 0; }
   .carte span {
     display: block;
     font-family: "Segoe Print";
     font-weight: bold; }
   .carte article {
     margin-bottom: 3rem; }
+
+.plat-titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  .plat-titre .barre {
+    width: 33%;
+    fill: #38161a; }
+
+.page-accueil main {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem; }
+.page-accueil section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+.page-accueil .croche {
+  width: 30px; }
 
 footer {
   width: 100%;
