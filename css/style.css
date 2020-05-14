@@ -1,11 +1,33 @@
-@font-face // regular {
+@font-face {
   font-family: "Segoe Print";
-  src: url("../font/SegoePrint.ttf") format("truetype");
+  src: url("../font/SegoePrint/SegoePrint-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Segoe Print";
+  src: url("../font/SegoePrint/SegoePrint-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../font/HelveticaNeue/HelveticaNeue-Bold-01.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: #fccb45;
   font-family: "Montserrat", sans-serif; }
@@ -17,40 +39,41 @@ header, footer {
   background-color: #589d88;
   color: #fccb45; }
   header h1, footer h1 {
-    font-size: 7rem; }
+    margin: 2rem 0;
+    letter-spacing: -0.25rem;
+    font-size: 3rem;
+    font-weight: bold; }
 
 main {
   display: flex;
-  width: 50%;
+  width: 80%;
   margin: auto;
+  margin-bottom: 7rem;
+  margin-top: 1rem;
   flex-direction: column;
-  align-items: center; }
-  main section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 2rem; }
+  align-items: center;
+  justify-content: center; }
 
-.menu {
+.menus {
   width: 400px;
   height: 400px;
-  box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 10px grey;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px; }
-  .menu__la_note_enchantee {
-    background-color: #fce2de;
+  margin: 20px;
+  font-size: 2rem; }
+  .menus__la_note_enchantee {
+    background-color: #f7e0dc;
     font-family: "Devonshire";
     color: #38161a; }
-    .menu__la_note_enchantee p {
+    .menus__la_note_enchantee p {
       font-family: "Segoe Print"; }
-  .menu__le_chic_a_la_francaise {
+  .menus__le_chic_a_la_francaise {
     background-color: #f8ddf6;
     font-family: "Kurale"; }
-    .menu__le_chic_a_la_francaise h2 {
+    .menus__le_chic_a_la_francaise h2 {
       background-color: #f3ec78;
       background: linear-gradient(22.5deg, #c57411, #6e4ccd);
       background-size: 100%;
@@ -58,13 +81,13 @@ main {
       -moz-background-clip: text;
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent; }
-    .menu__le_chic_a_la_francaise p {
+    .menus__le_chic_a_la_francaise p {
       font-family: "Abril Fatface";
       color: #c57411; }
-  .menu__le_delice_des_papilles {
+  .menus__le_delice_des_papilles {
     background-color: #eceeee;
     font-family: "Dancing Script"; }
-    .menu__le_delice_des_papilles h2 {
+    .menus__le_delice_des_papilles h2 {
       background-color: #f3ec78;
       background: linear-gradient(45deg, #0021db, #249df9);
       background-size: 100%;
@@ -72,13 +95,13 @@ main {
       -moz-background-clip: text;
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent; }
-    .menu__le_delice_des_papilles p {
+    .menus__le_delice_des_papilles p {
       font-family: "Segoe Print";
       color: #249df9; }
-  .menu__la_palette_du_gout {
+  .menus__la_palette_du_gout {
     background-color: #ffffff;
     font-family: "Kaushan Script"; }
-    .menu__la_palette_du_gout h2 {
+    .menus__la_palette_du_gout h2 {
       background-color: #f3ec78;
       background: linear-gradient(45deg, #3d923a, #bfff80);
       background-size: 100%;
@@ -86,9 +109,11 @@ main {
       -moz-background-clip: text;
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent; }
-    .menu__la_palette_du_gout p {
+    .menus__la_palette_du_gout p {
       font-family: "Segoe Print";
       color: #3d923a; }
+  .menus h2 {
+    font-weight: normal; }
 
 .btn {
   background-color: #589d88;
@@ -98,27 +123,58 @@ main {
   .btn p {
     margin: 0; }
 
-.menu-carte {
-  background-color: #fce2de;
+.carte {
+  background-color: #f7e0dc;
   font-family: "Segoe Print";
   color: #38161a;
-  box-shadow: 1px 1px 5px grey; }
-  .menu-carte h2 {
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  padding: 2rem 10%;
+  font-size: 0.7rem; }
+  .carte__titre {
+    margin: auto; }
+  .carte__header {
+    color: #353535;
+    font-family: "Helvetica Neue";
+    font-size: 1.25rem; }
+  .carte h2 {
+    margin: 1rem; }
+  .carte h3, .carte h4 {
+    margin: 0 0 1rem 0;
     font-family: "Devonshire";
-    font-size: 3rem; }
-  .menu-carte ul {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: normal; }
+  .carte h4 {
+    font-size: 1.5rem;
+    margin: 0; }
+  .carte h5 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold; }
+  .carte ul {
     list-style: none;
     padding-inline-start: 0; }
-  .menu-carte span {
+  .carte li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem; }
+  .carte span {
     display: block;
+    font-family: "Segoe Print";
     font-weight: bold; }
+  .carte article {
+    margin-bottom: 3rem; }
 
 footer {
-  position: fixed;
   width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   bottom: 0;
-  font-size: 3rem; }
+  font-size: 1.25rem;
+  font-weight: normal; }
+  footer a {
+    padding: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
