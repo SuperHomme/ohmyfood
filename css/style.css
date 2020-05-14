@@ -119,7 +119,8 @@ main {
   background-color: #589d88;
   border-radius: 1rem;
   margin: 1.5rem;
-  padding: 0.5rem 2rem; }
+  padding: 0.5rem 2rem;
+  font-size: 1.75rem; }
   .btn p {
     margin: 0; }
 
