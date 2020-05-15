@@ -152,8 +152,34 @@ main
     margin-top: 0
     padding: 0.5rem 2rem
     font-size: 1.75rem
+    font-weight: normal
+    display: flex
+    flex-direction: row
+    align-items: center
     p
         margin: 0
+        margin-right: 1rem
+    .chargement
+        span
+            width: 10px
+            height: 10px
+            margin: 0 5px
+            background-color: $secundary-color
+            border-radius: 50%
+            display: inline-block
+            animation-name: points
+            animation-duration: 2s
+            animation-iteration-count: infinite
+            animation-timing-function: ease-in-out
+        span:nth-child(2)
+            animation-delay: 0.4s
+        span:nth-child(3)
+            animation-delay: 0.8s
+        @keyframes points
+            50%
+                opacity: 0
+                transform: scale(0.7) translateY(2px)
+        
 
 .carte
     background-color: nth($la_note_enchantee, 1)
@@ -245,5 +271,29 @@ footer
     font-weight: normal
     a
         padding: 1rem
+        animation-name: wiggle
+        animation-duration: 2s
+        animation-iteration-count: infinite
+        animation-timing-function: ease-in-out
+    @keyframes wiggle
+        0%
+            transform: rotate (2deg)
+        15%
+            transform: translate(1px, 1px) rotate (-2deg)
+        23%
+            transform: rotate (1deg)
+        30%
+            transform: translate(1px, 1px) rotate (4deg)
+        46%
+            transform: rotate (3deg)
+        64%
+            transform: rotate (6deg)
+        77%
+            transform: translate(1px, 1px) rotate (1deg)
+        85%
+            transform: rotate (-1deg)
+        100%
+            transform: translate(1px, 1px) rotate (-3deg)
+            
 // ce que j'ai appris
 // 1 - les commentaires SASS en double slash = bcp de pbs
