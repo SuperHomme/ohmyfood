@@ -1,0 +1,89 @@
+@import '../main'
+
+.page-menu
+    main
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin-bottom: 7rem
+
+.menus
+    width: 255px
+    height: 400px
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.2)
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-size: 2rem
+    margin: 0 0 3rem 1rem
+    h2
+        font-weight: normal
+        margin: 0
+        font-size: 1.5rem
+    p
+        margin: 0
+        margin-top: 1rem
+        font-size: 1.5rem
+    &__la_note_enchantee
+        background-color: nth($la_note_enchantee, 1)
+        font-family: nth($la_note_enchantee, 2)
+        color: nth($la_note_enchantee, 4)
+        p
+            font-family: nth($la_note_enchantee, 3)
+    &__le_chic_a_la_francaise
+        background-color: nth($le_chic_a_la_francaise, 1)
+        font-family: nth($le_chic_a_la_francaise, 2)
+        h2
+            background-color: #f3ec78
+            background: linear-gradient(22.5deg, #c57411, #6e4ccd)
+            background-size: 100%
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
+        p
+            font-family: nth($le_chic_a_la_francaise, 3)
+            color: #c57411
+    &__le_delice_des_papilles
+        background-color: nth($le_delice_des_papilles, 1)
+        font-family: nth($le_delice_des_papilles, 2)
+        h2
+            background-color: #f3ec78
+            background: linear-gradient(45deg, #0021db, #249df9)
+            background-size: 100%
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
+        p
+            font-family: nth($la_palette_du_gout, 3)
+            color: #249df9
+    &__la_palette_du_gout
+        background-color: nth($la_palette_du_gout, 1)
+        font-family: nth($la_palette_du_gout, 2)
+        h2
+            background-color: #f3ec78
+            background: linear-gradient(45deg, #3d923a, #bfff80)
+            background-size: 100%
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
+        p
+            font-family: nth($la_palette_du_gout, 3)
+            color: #3d923a
+
+.page-accueil
+    main
+        flex-direction: column
+        align-items: center
+        margin-top: 3rem
+        margin-bottom: 5rem
+    section
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    .croche
+        fill: lineargradient(45deg, #0021db, #249df9)
+        width: 30px
