@@ -54,8 +54,10 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    text-align: left;
+    text-align: right;
     margin: 0.5rem 0; }
+  .carte p {
+    margin: 0 0 0.25rem 0; }
   .carte span {
     display: block;
     padding-left: 1rem; }
@@ -72,31 +74,26 @@ main {
     height: 0.625rem; }
 
 .barre__droite {
-  transform: scale(-1); }
+  transform: scaleX(-1); }
 .barre--orange {
-  fill: #bb772e; }
+  fill: #0031d4; }
 .barre--bleu {
-  fill: #9c6b96; }
+  fill: #2c72eb; }
 .barre--violet {
-  fill: #6851c5; }
+  fill: #4a9df2; }
 
 .carte {
-  background-color: #fdf5fd;
-  font-family: "Casus Pro";
-  color: #bb772e;
-  font-size: 0.95rem; }
+  background-color: #f9f9f9;
+  font-family: "Segoe Print";
+  color: black;
+  font-size: 0.8rem;
+  letter-spacing: -0.05rem; }
   .carte__titre {
     margin-top: 5rem; }
   .carte__plats {
     margin: 1rem 0 8rem 0; }
   .carte article {
     padding: 0 1rem; }
-    .carte article:nth-child(1) {
-      color: #bb772e; }
-    .carte article:nth-child(2) {
-      color: #9c6b96; }
-    .carte article:nth-child(3) {
-      color: #6851c5; }
   .carte span {
     font-size: 1.1rem; }
   .carte ul {
@@ -104,13 +101,16 @@ main {
   .carte li {
     margin: 1rem 0; }
   .carte h3, .carte h4 {
-    font-family: "Kurale";
-    margin-bottom: 4rem; }
+    font-family: "Dancing Script";
+    margin-bottom: 4rem;
+    font-weight: normal;
+    font-size: 3.75rem; }
   .carte h5 {
     min-width: 210px;
     letter-spacing: 0.05rem;
-    font-size: 1.1rem; }
+    font-size: 1rem;
+    font-weight: normal; }
     .carte h5::after {
       background: #bb772e; }
 
-/*# sourceMappingURL=le_chic_a_la_francaise.css.map */
+/*# sourceMappingURL=le_delice_des_papilles.css.map */

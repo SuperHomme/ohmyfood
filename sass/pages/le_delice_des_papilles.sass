@@ -1,0 +1,43 @@
+@import '../abstracts/variables'
+@import 'cartes'
+
+.barre   
+    &__droite
+        transform: scaleX(-1)
+    &--orange
+        fill: rgb(0,49,212)
+    &--bleu
+        fill: rgb(44,114,235)
+    &--violet
+        fill: rgb(74,157,242)
+
+.carte
+    background-color: rgb(249, 249, 249)
+    font-family: "Segoe Print"
+    color: black
+    font-size: 0.8rem
+    letter-spacing: -0.05rem
+    &__titre
+        margin-top: 5rem
+    &__plats
+        margin: 1rem 0 8rem 0
+    article
+        padding: 0 1rem
+    span
+        font-size: 1.1rem
+    ul
+        margin: 0 3rem
+    li
+        margin: 1rem 0
+    h3
+        font-family: "Dancing Script"
+        margin-bottom: 4rem
+        font-weight: normal
+        font-size: 3.75rem
+    h5
+        min-width: 210px
+        letter-spacing: 0.05rem
+        font-size: 1rem
+        font-weight: normal
+        &::after
+            background: rgb(187,119,46)
