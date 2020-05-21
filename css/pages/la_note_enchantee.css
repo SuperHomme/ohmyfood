@@ -50,6 +50,7 @@ main {
   .carte li {
     display: flex;
     justify-content: space-between;
+    text-align: left;
     margin: 0.5rem 0; }
   .carte span {
     display: block;
