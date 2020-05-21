@@ -76,6 +76,13 @@
   .btn .chargement span:nth-child(3) {
     animation-delay: 0.8s; }
 
+#gradient-croche-id {
+  --color-stop-1: rgb(221,85,99);
+  --color-stop-2: rgb(233,149,114); }
+
+.croche-note .gradient-croche {
+  fill: url(#gradient-croche-id); }
+
 header, footer {
   background-color: #589d88;
   color: #fccb45; }
