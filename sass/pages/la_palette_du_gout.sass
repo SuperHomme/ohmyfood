@@ -13,7 +13,7 @@
         -moz-text-fill-color: transparent
 
 .carte
-    background-color: rgb(249, 249, 249)
+    background-color: rgb(253, 255, 253)
     font-family: "Segoe Print"
     color: black
     font-size: 0.75rem
@@ -36,7 +36,7 @@
         font-weight: normal
         font-size: 3.75rem
         white-space: initial
-        background: linear-gradient(45deg, #3d923a, #bfff80)
+        background: linear-gradient(45deg, rgb(84,143,59), rgb(204,252,143))
         background-size: 100%
         -webkit-background-clip: text
         -moz-background-clip: text
@@ -46,5 +46,17 @@
         min-width: 145px
         font-size: 1rem
         font-weight: normal
+
+article h5     
+    &:nth-child(1)
         &::after
             background: rgb(187,119,46)
+    &:nth-child(2)
+        &::after
+            background: linear-gradient(45deg, rgb(84,143,59), rgb(204,252,143))
+            background-size: 100%
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
+    &:nth-child(3)
+        &::after
+            background: #d2009e

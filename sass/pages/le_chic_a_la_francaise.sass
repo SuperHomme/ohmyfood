@@ -16,11 +16,12 @@
     font-family: "Casus Pro"
     font-size: 0.75rem
     &__titre
-        margin-top: 5rem
+        margin-top: 6rem
     &__plats
         margin: 1rem 0 8rem 0
     article
         padding: 0 1rem
+        margin-bottom: 4rem
         &:nth-child(1)
             color: rgb(187,119,46)
         &:nth-child(2)
@@ -35,7 +36,7 @@
         margin: 1rem 0
     h3
         font-family: "Kurale"
-        margin-bottom: 4rem
+        margin-bottom: 5rem
         background: linear-gradient(45deg, rgb(214,140,54), rgb(134,99,245))
         background-size: 100%
         -webkit-background-clip: text
@@ -47,6 +48,18 @@
         letter-spacing: 0.05rem
         font-size: 1rem
         padding: 0 0.2rem
+
+article h5     
+    &:nth-child(1)
         &::after
             background: rgb(187,119,46)
+    &:nth-child(2)
+        &::after
+            background: linear-gradient(45deg, rgb(214,140,54), rgb(134,99,245))
+            background-size: 100%
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
+    &:nth-child(3)
+        &::after
+            background: #d2009e
         

@@ -7,7 +7,8 @@ main {
 .carte {
   box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
   font-size: 0.7rem;
-  min-height: 990px; }
+  min-height: 990px;
+  max-width: 560px; }
   .carte__titre {
     display: flex;
     flex-direction: column;
@@ -86,7 +87,7 @@ main {
   -moz-text-fill-color: transparent; }
 
 .carte {
-  background-color: #f9f9f9;
+  background-color: #fdfffd;
   font-family: "Segoe Print";
   color: black;
   font-size: 0.75rem;
@@ -109,7 +110,7 @@ main {
     font-weight: normal;
     font-size: 3.75rem;
     white-space: initial;
-    background: linear-gradient(45deg, #3d923a, #bfff80);
+    background: linear-gradient(45deg, #548f3b, #ccfc8f);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -119,7 +120,15 @@ main {
     min-width: 145px;
     font-size: 1rem;
     font-weight: normal; }
-    .carte h5::after {
-      background: #bb772e; }
+
+article h5:nth-child(1)::after {
+  background: #bb772e; }
+article h5:nth-child(2)::after {
+  background: linear-gradient(45deg, #548f3b, #ccfc8f);
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; }
+article h5:nth-child(3)::after {
+  background: #d2009e; }
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */
