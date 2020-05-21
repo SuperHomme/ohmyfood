@@ -1,0 +1,46 @@
+@import '../abstracts/variables'
+@import 'cartes'
+
+.barre   
+    &__droite
+        transform: scale(-1)
+    &--orange
+        fill: rgb(187,119,46)
+    &--bleu
+        fill: rgb(156,107,150)
+    &--violet
+        fill: rgb(104,81,197)
+
+.carte
+    background-color: nth($le_chic_a_la_francaise, 1)
+    font-family: "Abril Fatface"
+    color: rgb(187,119,46)
+    font-size: 0.95rem
+    &__titre
+        margin-top: 5rem
+    &__plats
+        margin: 1rem 0 8rem 0
+    article
+        padding: 0 1rem
+        &:nth-child(1)
+            color: rgb(187,119,46)
+        &:nth-child(2)
+            color: rgb(156,107,150)
+        &:nth-child(3)
+            color: rgb(104,81,197)
+    span
+        font-size: 1.1rem
+    ul
+        margin: 0 3rem
+    li
+        margin: 1rem 0
+    h3
+        font-family: nth($le_chic_a_la_francaise, 2)
+        margin-bottom: 4rem
+    h5
+        min-width: 210px
+        letter-spacing: 0.05rem
+        font-size: 1.1rem
+        &::after
+            background: rgb(187,119,46)
+        

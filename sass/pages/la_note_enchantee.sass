@@ -2,17 +2,27 @@
 @import 'cartes'
 
 .carte
+    background-color: nth($la_note_enchantee, 1)
+    font-family: nth($la_note_enchantee, 3)
+    color: nth($la_note_enchantee, 4)
+    padding: 2rem 10%
     &__titre
         .croche
             width: 3.5rem
     &__rappel
         .croche
             width: 2rem
+    span
+        font-family: "Segoe Print"
+        font-weight: bold
 
 .plat-titre
     .barre
         fill: rgb(56,22,26)
-
+h3
+    font-family: nth($la_note_enchantee, 2)
 h5
+    min-width: 167px
+    font-size: 1rem
     &::after
         background: rgb(56,22,26)

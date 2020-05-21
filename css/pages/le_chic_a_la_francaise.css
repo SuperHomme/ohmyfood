@@ -6,7 +6,6 @@ main {
 
 .carte {
   box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
-  height: 711px;
   font-size: 0.7rem; }
   .carte__titre {
     display: flex;
@@ -72,29 +71,46 @@ main {
     width: 100%;
     height: 0.625rem; }
 
+.barre__droite {
+  transform: scale(-1); }
+.barre--orange {
+  fill: #bb772e; }
+.barre--bleu {
+  fill: #9c6b96; }
+.barre--violet {
+  fill: #6851c5; }
+
 .carte {
-  background-color: #f7e0dc;
-  font-family: "Segoe Print";
-  color: #38161a;
-  padding: 2rem 10%; }
-  .carte__titre .croche {
-    width: 3.5rem; }
-  .carte__rappel .croche {
-    width: 2rem; }
+  background-color: #fdf5fd;
+  font-family: "Abril Fatface";
+  color: #bb772e;
+  font-size: 0.95rem; }
+  .carte__titre {
+    margin-top: 5rem; }
+  .carte__plats {
+    margin: 1rem 0 8rem 0; }
+  .carte article {
+    padding: 0 1rem; }
+    .carte article:nth-child(1) {
+      color: #bb772e; }
+    .carte article:nth-child(2) {
+      color: #9c6b96; }
+    .carte article:nth-child(3) {
+      color: #6851c5; }
   .carte span {
-    font-family: "Segoe Print";
-    font-weight: bold; }
+    font-size: 1.1rem; }
+  .carte ul {
+    margin: 0 3rem; }
+  .carte li {
+    margin: 1rem 0; }
+  .carte h3, .carte h4 {
+    font-family: "Kurale";
+    margin-bottom: 4rem; }
+  .carte h5 {
+    min-width: 210px;
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem; }
+    .carte h5::after {
+      background: #bb772e; }
 
-.plat-titre .barre {
-  fill: #38161a; }
-
-h3, .carte h4 {
-  font-family: "Devonshire"; }
-
-h5 {
-  width: 167px;
-  font-size: 1rem; }
-  h5::after {
-    background: #38161a; }
-
-/*# sourceMappingURL=la_note_enchantee.css.map */
+/*# sourceMappingURL=le_chic_a_la_francaise.css.map */

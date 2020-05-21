@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro-DemiboldItalic.eot');
+    src: local('Casus Pro Demibold Italic'), local('CasusPro-DemiboldItalic'),
+        url('CasusPro-DemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-DemiboldItalic.woff2') format('woff2'),
+        url('CasusPro-DemiboldItalic.woff') format('woff'),
+        url('CasusPro-DemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro-Light.eot');
+    src: local('Casus Pro Light'), local('CasusPro-Light'),
+        url('CasusPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-Light.woff2') format('woff2'),
+        url('CasusPro-Light.woff') format('woff'),
+        url('CasusPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro-Demibold.eot');
+    src: local('Casus Pro Demibold'), local('CasusPro-Demibold'),
+        url('CasusPro-Demibold.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-Demibold.woff2') format('woff2'),
+        url('CasusPro-Demibold.woff') format('woff'),
+        url('CasusPro-Demibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro-BlackItalic.eot');
+    src: local('Casus Pro Black Italic'), local('CasusPro-BlackItalic'),
+        url('CasusPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-BlackItalic.woff2') format('woff2'),
+        url('CasusPro-BlackItalic.woff') format('woff'),
+        url('CasusPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro-Bold.eot');
+    src: local('Casus Pro Bold'), local('CasusPro-Bold'),
+        url('CasusPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-Bold.woff2') format('woff2'),
+        url('CasusPro-Bold.woff') format('woff'),
+        url('CasusPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Casus Pro Book';
+    src: url('CasusPro-Book.eot');
+    src: local('Casus Pro Book'), local('CasusPro-Book'),
+        url('CasusPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-Book.woff2') format('woff2'),
+        url('CasusPro-Book.woff') format('woff'),
+        url('CasusPro-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro-BoldItalic.eot');
+    src: local('Casus Pro Bold Italic'), local('CasusPro-BoldItalic'),
+        url('CasusPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-BoldItalic.woff2') format('woff2'),
+        url('CasusPro-BoldItalic.woff') format('woff'),
+        url('CasusPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro.eot');
+    src: local('Casus Pro'), local('CasusPro'),
+        url('CasusPro.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro.woff2') format('woff2'),
+        url('CasusPro.woff') format('woff'),
+        url('CasusPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro-Black.eot');
+    src: local('Casus Pro Black'), local('CasusPro-Black'),
+        url('CasusPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-Black.woff2') format('woff2'),
+        url('CasusPro-Black.woff') format('woff'),
+        url('CasusPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro-Italic.eot');
+    src: local('Casus Pro Italic'), local('CasusPro-Italic'),
+        url('CasusPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-Italic.woff2') format('woff2'),
+        url('CasusPro-Italic.woff') format('woff'),
+        url('CasusPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Casus Pro Book';
+    src: url('CasusPro-BookItalic.eot');
+    src: local('Casus Pro Book Italic'), local('CasusPro-BookItalic'),
+        url('CasusPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-BookItalic.woff2') format('woff2'),
+        url('CasusPro-BookItalic.woff') format('woff'),
+        url('CasusPro-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Casus Pro';
+    src: url('CasusPro-LightItalic.eot');
+    src: local('Casus Pro Light Italic'), local('CasusPro-LightItalic'),
+        url('CasusPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('CasusPro-LightItalic.woff2') format('woff2'),
+        url('CasusPro-LightItalic.woff') format('woff'),
+        url('CasusPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
