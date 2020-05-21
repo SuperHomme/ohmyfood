@@ -17,8 +17,6 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 1rem; }
-    .carte__titre .croche {
-      width: 3.5rem; }
   .carte__header {
     color: #353535;
     font-family: "Helvetica Neue";
@@ -67,6 +65,8 @@ main {
     width: 33%;
     fill: #38161a; }
 
+.carte__titre .croche {
+  width: 3.5rem; }
 .carte__rappel .croche {
   width: 2rem; }
 

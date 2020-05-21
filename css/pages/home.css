@@ -1,10 +1,3 @@
-#gradient-croche-id {
-  --color-stop-1: #f12c06;
-  --color-stop-2: #faed34; }
-
-.croche-note .gradient-croche {
-  fill: url(#gradient-croche-id); }
-
 main {
   flex-direction: column;
   align-items: center;
