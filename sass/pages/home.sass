@@ -1,9 +1,17 @@
-.page-menu
-    main
-        flex-direction: column
-        align-items: center
-        justify-content: center
-        margin-bottom: 7rem
+@import '../abstracts/variables'
+
+main
+    flex-direction: column
+    align-items: center
+    margin-top: 3rem
+    margin-bottom: 5rem
+section
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+.croche
+    fill: lineargradient(45deg, #0021db, #249df9)
+    width: 30px    
 
 .menus
     width: 255px
@@ -71,17 +79,3 @@
         p
             font-family: nth($la_palette_du_gout, 3)
             color: #3d923a
-
-.page-accueil
-    main
-        flex-direction: column
-        align-items: center
-        margin-top: 3rem
-        margin-bottom: 5rem
-    section
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-    .croche
-        fill: lineargradient(45deg, #0021db, #249df9)
-        width: 30px
