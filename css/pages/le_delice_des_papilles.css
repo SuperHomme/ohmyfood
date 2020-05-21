@@ -6,7 +6,8 @@ main {
 
 .carte {
   box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  min-height: 990px; }
   .carte__titre {
     display: flex;
     flex-direction: column;
@@ -34,10 +35,10 @@ main {
     margin: 0 0.5rem; }
   .carte h5 {
     margin: 0;
-    padding: 0 1rem;
     font-weight: bold;
     white-space: nowrap;
-    position: relative; }
+    position: relative;
+    padding: 0 1rem; }
     .carte h5::after {
       content: "";
       display: block;
@@ -54,13 +55,14 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    text-align: right;
-    margin: 0.5rem 0; }
+    margin: 0.5rem 0;
+    text-align: left; }
   .carte p {
     margin: 0 0 0.25rem 0; }
   .carte span {
     display: block;
-    padding-left: 1rem; }
+    padding-left: 1rem;
+    text-align: right; }
   .carte article {
     margin-bottom: 3rem; }
 
@@ -75,11 +77,11 @@ main {
 
 .barre__droite {
   transform: scaleX(-1); }
-.barre--orange {
+.barre--bleu-100 {
   fill: #0031d4; }
-.barre--bleu {
+.barre--bleu-66 {
   fill: #2c72eb; }
-.barre--violet {
+.barre--bleu-33 {
   fill: #4a9df2; }
 
 .carte {
@@ -104,13 +106,27 @@ main {
     font-family: "Dancing Script";
     margin-bottom: 4rem;
     font-weight: normal;
-    font-size: 3.75rem; }
+    font-size: 3.75rem;
+    background: linear-gradient(45deg, #002fd2, #398af3);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; }
   .carte h5 {
     min-width: 210px;
     letter-spacing: 0.05rem;
     font-size: 1rem;
     font-weight: normal; }
-    .carte h5::after {
-      background: #bb772e; }
+
+article h5:nth-child(1)::after {
+  background: #bb772e; }
+article h5:nth-child(2)::after {
+  background: linear-gradient(45deg, #002fd2, #398af3);
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; }
+article h5:nth-child(3)::after {
+  background: #d2009e; }
 
 /*# sourceMappingURL=le_delice_des_papilles.css.map */

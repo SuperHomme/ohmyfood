@@ -78,22 +78,20 @@ article {
     background-color: #fdf5fd;
     font-family: "Kurale"; }
     .menus__le_chic_a_la_francaise h2 {
-      background-color: #f3ec78;
-      background: linear-gradient(22.5deg, #c57411, #6e4ccd);
+      background: linear-gradient(45deg, #d68c36, #8663f5);
       background-size: 100%;
       -webkit-background-clip: text;
       -moz-background-clip: text;
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent; }
     .menus__le_chic_a_la_francaise p {
-      font-family: "Abril Fatface";
+      font-family: "Casus Pro";
       color: #c57411; }
   .menus__le_delice_des_papilles {
     background-color: #f9f9f9;
     font-family: "Dancing Script"; }
     .menus__le_delice_des_papilles h2 {
-      background-color: #f3ec78;
-      background: linear-gradient(45deg, #0021db, #249df9);
+      background: linear-gradient(45deg, #002fd2, #398af3);
       background-size: 100%;
       -webkit-background-clip: text;
       -moz-background-clip: text;
@@ -106,7 +104,6 @@ article {
     background-color: #fdfffd;
     font-family: "Kaushan Script"; }
     .menus__la_palette_du_gout h2 {
-      background-color: #f3ec78;
       background: linear-gradient(45deg, #3d923a, #bfff80);
       background-size: 100%;
       -webkit-background-clip: text;

@@ -78,28 +78,25 @@ main {
 .barre__droite {
   transform: scaleX(-1); }
 .barre--orange {
-  fill: #bb772e; }
-.barre--bleu {
-  fill: #9c6b96; }
-.barre--violet {
-  fill: #6851c5; }
+  background: linear-gradient(45deg, #548f3b, #ccfc8f);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; }
 
 .carte {
-  background-color: #fdf5fd;
-  font-family: "Casus Pro";
-  font-size: 0.75rem; }
+  background-color: #f9f9f9;
+  font-family: "Segoe Print";
+  color: black;
+  font-size: 0.75rem;
+  letter-spacing: -0.05rem; }
   .carte__titre {
     margin-top: 5rem; }
   .carte__plats {
     margin: 1rem 0 8rem 0; }
   .carte article {
     padding: 0 1rem; }
-    .carte article:nth-child(1) {
-      color: #bb772e; }
-    .carte article:nth-child(2) {
-      color: #9c6b96; }
-    .carte article:nth-child(3) {
-      color: #6851c5; }
   .carte span {
     font-size: 1.1rem; }
   .carte ul {
@@ -107,20 +104,22 @@ main {
   .carte li {
     margin: 1rem 0; }
   .carte h3, .carte h4 {
-    font-family: "Kurale";
+    font-family: "Kaushan Script";
     margin-bottom: 4rem;
-    background: linear-gradient(45deg, #d68c36, #8663f5);
+    font-weight: normal;
+    font-size: 3.75rem;
+    white-space: initial;
+    background: linear-gradient(45deg, #3d923a, #bfff80);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent; }
   .carte h5 {
-    min-width: 232px;
-    letter-spacing: 0.05rem;
+    min-width: 145px;
     font-size: 1rem;
-    padding: 0 0.2rem; }
+    font-weight: normal; }
     .carte h5::after {
       background: #bb772e; }
 
-/*# sourceMappingURL=le_chic_a_la_francaise.css.map */
+/*# sourceMappingURL=la_palette_du_gout.css.map */

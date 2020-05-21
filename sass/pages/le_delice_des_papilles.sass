@@ -4,11 +4,11 @@
 .barre   
     &__droite
         transform: scaleX(-1)
-    &--orange
+    &--bleu-100
         fill: rgb(0,49,212)
-    &--bleu
+    &--bleu-66
         fill: rgb(44,114,235)
-    &--violet
+    &--bleu-33
         fill: rgb(74,157,242)
 
 .carte
@@ -34,10 +34,28 @@
         margin-bottom: 4rem
         font-weight: normal
         font-size: 3.75rem
+        background: linear-gradient(45deg, rgb(0,47,210), rgb(57,138,243))
+        background-size: 100%
+        -webkit-background-clip: text
+        -moz-background-clip: text
+        -webkit-text-fill-color: transparent
+        -moz-text-fill-color: transparent
     h5
         min-width: 210px
         letter-spacing: 0.05rem
         font-size: 1rem
         font-weight: normal
+
+article h5     
+    &:nth-child(1)
         &::after
             background: rgb(187,119,46)
+    &:nth-child(2)
+        &::after
+            background: linear-gradient(45deg, rgb(0,47,210), rgb(57,138,243))
+            background-size: 100%
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
+    &:nth-child(3)
+        &::after
+            background: #d2009e

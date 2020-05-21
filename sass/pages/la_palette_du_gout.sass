@@ -1,0 +1,50 @@
+@import '../abstracts/variables'
+@import 'cartes'
+
+.barre   
+    &__droite
+        transform: scaleX(-1)
+    &--orange
+        background: linear-gradient(45deg, rgb(84,143,59), rgb(204,252,143))
+        background-size: 100%
+        -webkit-background-clip: text
+        -moz-background-clip: text
+        -webkit-text-fill-color: transparent
+        -moz-text-fill-color: transparent
+
+.carte
+    background-color: rgb(249, 249, 249)
+    font-family: "Segoe Print"
+    color: black
+    font-size: 0.75rem
+    letter-spacing: -0.05rem
+    &__titre
+        margin-top: 5rem
+    &__plats
+        margin: 1rem 0 8rem 0
+    article
+        padding: 0 1rem
+    span
+        font-size: 1.1rem
+    ul
+        margin: 0 3rem
+    li
+        margin: 1rem 0
+    h3
+        font-family: "Kaushan Script"
+        margin-bottom: 4rem
+        font-weight: normal
+        font-size: 3.75rem
+        white-space: initial
+        background: linear-gradient(45deg, #3d923a, #bfff80)
+        background-size: 100%
+        -webkit-background-clip: text
+        -moz-background-clip: text
+        -webkit-text-fill-color: transparent
+        -moz-text-fill-color: transparent
+    h5
+        min-width: 145px
+        font-size: 1rem
+        font-weight: normal
+        &::after
+            background: rgb(187,119,46)
