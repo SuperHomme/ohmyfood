@@ -47,6 +47,17 @@ main
         padding: 0 1rem
         font-weight: bold
         white-space: nowrap
+        position: relative
+        &::after
+            content: ""
+            display: block
+            height: 0.2rem
+            left: 0
+            width: 0
+            transition: width 0.3s ease 0s, left 0.3s ease 0s
+        &:hover
+            &::after
+                width: 100%
     ul
         list-style: none
         padding-inline-start: 0
