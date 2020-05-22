@@ -10,3 +10,11 @@
 //         @content
 // @else
 //     @error 'No value found for `#{$breakpoint}`. '+ 'Please make sure it is defined in `$breakpoints` map.'
+
+@mixin gradient ($gd-color-1, $gd-color-2)
+    background: linear-gradient(45deg, $gd-color-1, $gd-color-2)
+    background-size: 100%
+    -webkit-background-clip: text
+    -moz-background-clip: text
+    -webkit-text-fill-color: transparent
+    -moz-text-fill-color: transparent

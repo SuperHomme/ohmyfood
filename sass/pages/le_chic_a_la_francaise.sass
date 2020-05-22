@@ -1,4 +1,5 @@
 @import '../abstracts/variables'
+@import '../abstracts/mixins'
 @import 'cartes'
 
 .barre   
@@ -12,8 +13,8 @@
         fill: rgb(104,81,197)
 
 .carte
-    background-color: rgb(253, 245, 253)
-    font-family: "Casus Pro"
+    background-color: $lechic-color-bg
+    font-family: $lechic-font-body
     font-size: 0.75rem
     &__titre
         margin-top: 6rem
@@ -35,14 +36,9 @@
     li
         margin: 1rem 0
     h3
-        font-family: "Kurale"
+        font-family: $lechic-font-title
         margin-bottom: 5rem
-        background: linear-gradient(45deg, rgb(214,140,54), rgb(134,99,245))
-        background-size: 100%
-        -webkit-background-clip: text
-        -moz-background-clip: text
-        -webkit-text-fill-color: transparent
-        -moz-text-fill-color: transparent
+        @include gradient($lechic-color-1,$lechic-color-2)
     h5
         min-width: 232px
         letter-spacing: 0.05rem
@@ -55,7 +51,7 @@ article h5
             background: rgb(187,119,46)
     &:nth-child(2)
         &::after
-            background: linear-gradient(45deg, rgb(214,140,54), rgb(134,99,245))
+            background: linear-gradient(45deg, $lechic-color-1, $lechic-color-2)
             background-size: 100%
             -webkit-text-fill-color: transparent
             -moz-text-fill-color: transparent

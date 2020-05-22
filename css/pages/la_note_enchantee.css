@@ -80,16 +80,20 @@ main {
   background-color: #f7e0dc;
   font-family: "Segoe Print";
   color: #38161a;
-  padding: 2rem 10%;
   min-height: unset; }
-  .carte__titre .croche {
-    width: 3.5rem; }
-  .carte__rappel .croche {
-    width: 2rem; }
+  .carte__titre {
+    margin: 4rem 0; }
+    .carte__titre .croche {
+      width: 3.5rem; }
+  .carte__plats {
+    margin: 0 4rem; }
+  .carte__rappel {
+    margin: 4rem 0; }
+    .carte__rappel .croche {
+      width: 2rem; }
   .carte p {
     margin: 0; }
   .carte span {
-    font-family: "Segoe Print";
     font-weight: bold; }
 
 .plat-titre .barre {

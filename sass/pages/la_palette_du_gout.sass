@@ -1,20 +1,14 @@
 @import '../abstracts/variables'
+@import '../abstracts/mixins'
 @import 'cartes'
 
-.barre   
+.barre
     &__droite
         transform: scaleX(-1)
-    &--orange
-        background: linear-gradient(45deg, rgb(84,143,59), rgb(204,252,143))
-        background-size: 100%
-        -webkit-background-clip: text
-        -moz-background-clip: text
-        -webkit-text-fill-color: transparent
-        -moz-text-fill-color: transparent
 
 .carte
-    background-color: rgb(253, 255, 253)
-    font-family: "Segoe Print"
+    background-color: $lapalette-color-bg
+    font-family: $lapalette-font-body
     color: black
     font-size: 0.75rem
     letter-spacing: -0.05rem
@@ -31,17 +25,12 @@
     li
         margin: 1rem 0
     h3
-        font-family: "Kaushan Script"
+        font-family: $lapalette-font-title
         margin-bottom: 4rem
         font-weight: normal
         font-size: 3.75rem
         white-space: initial
-        background: linear-gradient(45deg, rgb(84,143,59), rgb(204,252,143))
-        background-size: 100%
-        -webkit-background-clip: text
-        -moz-background-clip: text
-        -webkit-text-fill-color: transparent
-        -moz-text-fill-color: transparent
+        @include gradient($lapalette-color-1, $lapalette-color-2)
     h5
         min-width: 145px
         font-size: 1rem
@@ -53,10 +42,11 @@ article h5
             background: rgb(187,119,46)
     &:nth-child(2)
         &::after
-            background: linear-gradient(45deg, rgb(84,143,59), rgb(204,252,143))
+            background: linear-gradient(45deg, $lapalette-color-1, $lapalette-color-2)
             background-size: 100%
             -webkit-text-fill-color: transparent
             -moz-text-fill-color: transparent
     &:nth-child(3)
         &::after
             background: #d2009e
+      

@@ -1,4 +1,5 @@
 @import '../abstracts/variables'
+@import '../abstracts/mixins'
 @import '../abstracts/animations'
 
 main
@@ -48,47 +49,33 @@ article
         margin-top: 1rem
         font-size: 1.5rem
     &__la_note_enchantee
-        background-color: rgb(247,224,220)
-        font-family: "Devonshire"
-        color: rgb(56,22,26)
+        background-color: $lanote-color-bg
+        color: $lanote-color-1
+        h2
+            font-family: $lanote-font-title
         p
-            font-family: "Segoe Print"
+            font-family: $lanote-font-body
     &__le_chic_a_la_francaise
-        background-color: rgb(253, 245, 253)
-        font-family: "Kurale"
+        background-color: $lechic-color-bg
         h2
-            background: linear-gradient(45deg, rgb(214,140,54), rgb(134,99,245))
-            background-size: 100%
-            -webkit-background-clip: text
-            -moz-background-clip: text
-            -webkit-text-fill-color: transparent
-            -moz-text-fill-color: transparent
+            font-family: $lechic-font-title
+            @include gradient($lechic-color-1, $lechic-color-2)
         p
-            font-family: "Casus Pro"
-            color: #c57411
+            font-family: $lechic-font-body
+            color: $lechic-color-1
     &__le_delice_des_papilles
-        background-color: rgb(249, 249, 249)
-        font-family: "Dancing Script"
+        background-color: $ledelice-color-bg
         h2
-            background: linear-gradient(45deg, rgb(0,47,210), rgb(57,138,243))
-            background-size: 100%
-            -webkit-background-clip: text
-            -moz-background-clip: text
-            -webkit-text-fill-color: transparent
-            -moz-text-fill-color: transparent
+            font-family: $ledelice-font-title
+            @include gradient($ledelice-color-1, $ledelice-color-2)
         p
-            font-family: "Segoe Print"
-            color: #249df9
+            font-family: $ledelice-font-body
+            color: lighten($ledelice-color-1, 10%)
     &__la_palette_du_gout
-        background-color: rgb(253, 255, 253)
-        font-family: "Kaushan Script"
+        background-color: $lapalette-color-bg
+        font-family: $lapalette-font-title
         h2
-            background: linear-gradient(45deg, #3d923a, #bfff80)
-            background-size: 100%
-            -webkit-background-clip: text
-            -moz-background-clip: text
-            -webkit-text-fill-color: transparent
-            -moz-text-fill-color: transparent
+            @include gradient($lapalette-color-1, $lapalette-color-2)
         p
-            font-family: "Segoe Print"
-            color: #3d923a
+            font-family: $lapalette-font-body
+            color: lighten($lapalette-color-1, 10%)

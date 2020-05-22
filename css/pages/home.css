@@ -70,14 +70,15 @@ article {
     font-size: 1.5rem; }
   .menus__la_note_enchantee {
     background-color: #f7e0dc;
-    font-family: "Devonshire";
     color: #38161a; }
+    .menus__la_note_enchantee h2 {
+      font-family: "Devonshire"; }
     .menus__la_note_enchantee p {
       font-family: "Segoe Print"; }
   .menus__le_chic_a_la_francaise {
-    background-color: #fdf5fd;
-    font-family: "Kurale"; }
+    background-color: #fdf5fd; }
     .menus__le_chic_a_la_francaise h2 {
+      font-family: "Kurale";
       background: linear-gradient(45deg, #d68c36, #8663f5);
       background-size: 100%;
       -webkit-background-clip: text;
@@ -86,11 +87,11 @@ article {
       -moz-text-fill-color: transparent; }
     .menus__le_chic_a_la_francaise p {
       font-family: "Casus Pro";
-      color: #c57411; }
+      color: #d68c36; }
   .menus__le_delice_des_papilles {
-    background-color: #f9f9f9;
-    font-family: "Dancing Script"; }
+    background-color: #f9f9f9; }
     .menus__le_delice_des_papilles h2 {
+      font-family: "Dancing Script";
       background: linear-gradient(45deg, #002fd2, #398af3);
       background-size: 100%;
       -webkit-background-clip: text;
@@ -99,12 +100,12 @@ article {
       -moz-text-fill-color: transparent; }
     .menus__le_delice_des_papilles p {
       font-family: "Segoe Print";
-      color: #249df9; }
+      color: #063eff; }
   .menus__la_palette_du_gout {
     background-color: #fdfffd;
     font-family: "Kaushan Script"; }
     .menus__la_palette_du_gout h2 {
-      background: linear-gradient(45deg, #3d923a, #bfff80);
+      background: linear-gradient(45deg, #548f3b, #ccfc8f);
       background-size: 100%;
       -webkit-background-clip: text;
       -moz-background-clip: text;
@@ -112,6 +113,6 @@ article {
       -moz-text-fill-color: transparent; }
     .menus__la_palette_du_gout p {
       font-family: "Segoe Print";
-      color: #3d923a; }
+      color: #69b34a; }
 
 /*# sourceMappingURL=home.css.map */

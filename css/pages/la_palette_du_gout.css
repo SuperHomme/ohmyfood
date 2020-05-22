@@ -78,13 +78,6 @@ main {
 
 .barre__droite {
   transform: scaleX(-1); }
-.barre--orange {
-  background: linear-gradient(45deg, #548f3b, #ccfc8f);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent; }
 
 .carte {
   background-color: #fdfffd;

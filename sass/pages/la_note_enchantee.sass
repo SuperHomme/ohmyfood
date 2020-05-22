@@ -1,31 +1,34 @@
 @import '../abstracts/variables'
+@import '../abstracts/mixins'
 @import 'cartes'
 
 .carte
-    background-color: rgb(247,224,220)
-    font-family: "Segoe Print"
-    color: rgb(56,22,26)
-    padding: 2rem 10%
+    background-color: $lanote-color-bg
+    font-family: $lanote-font-body
+    color: $lanote-color-1
     min-height: unset
     &__titre
+        margin: 4rem 0
         .croche
             width: 3.5rem
+    &__plats
+        margin: 0 4rem
     &__rappel
+        margin: 4rem 0
         .croche
             width: 2rem
     p
         margin: 0
     span
-        font-family: "Segoe Print"
         font-weight: bold
 
 .plat-titre
     .barre
-        fill: rgb(56,22,26)
+        fill: $lanote-color-1
 h3
-    font-family: "Devonshire"
+    font-family: $lanote-font-title
 h5
     min-width: 167px
     font-size: 1rem
     &::after
-        background: rgb(56,22,26)
+        background: $lanote-color-1

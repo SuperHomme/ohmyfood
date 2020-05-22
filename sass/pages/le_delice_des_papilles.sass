@@ -1,19 +1,20 @@
 @import '../abstracts/variables'
+@import '../abstracts/mixins'
 @import 'cartes'
 
 .barre
     &__droite
         transform: scaleX(-1)
     &--bleu-100
-        fill: rgb(0,49,212)
+        fill: $ledelice-color-1
     &--bleu-66
         fill: rgb(44,114,235)
     &--bleu-33
         fill: rgb(74,157,242)
 
 .carte
-    background-color: rgb(249, 249, 249)
-    font-family: "Segoe Print"
+    background-color: $ledelice-color-bg
+    font-family: $ledelice-font-body
     color: black
     font-size: 0.8rem
     letter-spacing: -0.05rem
@@ -30,16 +31,11 @@
     li
         margin: 1rem 0
     h3
-        font-family: "Dancing Script"
+        font-family: $ledelice-font-title
         margin-bottom: 4rem
         font-weight: normal
         font-size: 3.75rem
-        background: linear-gradient(45deg, rgb(0,47,210), rgb(57,138,243))
-        background-size: 100%
-        -webkit-background-clip: text
-        -moz-background-clip: text
-        -webkit-text-fill-color: transparent
-        -moz-text-fill-color: transparent
+        @include gradient ($ledelice-color-1, $ledelice-color-2)
     h5
         min-width: 210px
         letter-spacing: 0.05rem
@@ -52,7 +48,7 @@ article h5
             background: rgb(187,119,46)
     &:nth-child(2)
         &::after
-            background: linear-gradient(45deg, rgb(0,47,210), rgb(57,138,243))
+            background: linear-gradient(45deg, $ledelice-color-1, $ledelice-color-2)
             background-size: 100%
             -webkit-text-fill-color: transparent
             -moz-text-fill-color: transparent
