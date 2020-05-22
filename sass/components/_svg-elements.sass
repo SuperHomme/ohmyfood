@@ -1,12 +1,14 @@
-//paramètrage du dégradé sur la croche en svg 
+@import '../abstracts/variables'
+@import '../abstracts/mixins'
 
+//paramètrage du dégradé sur la croche en svg 
 #gradient-croche-id
     --color-stop-1: rgb(221,85,99)
     --color-stop-2: rgb(233,149,114)
-
 .croche-note .gradient-croche
     fill: url(#gradient-croche-id)
 
+//paramètrage du dégradé sur la barre du menu La palette du goût
 #gradient-barre-lapalette-id
     --color-stop-1: rgb(204,252,143)
     --color-stop-2: rgb(84,143,59)
