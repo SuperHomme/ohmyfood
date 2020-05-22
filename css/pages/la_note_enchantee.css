@@ -2,110 +2,137 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 7rem; }
+  margin-bottom: 7rem;
+}
 
 .carte {
   box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
   font-size: 0.7rem;
   min-height: 990px;
-  max-width: 560px; }
-  .carte__titre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem; }
-  .carte__header {
-    color: #353535;
-    font-family: "Helvetica Neue";
-    font-size: 1.25rem;
-    margin-top: 1rem; }
-  .carte__rappel {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 1rem; }
-  .carte h2 {
-    margin: 1rem; }
-  .carte h3, .carte h4 {
-    margin: 0 0 1rem 0;
-    font-size: 2rem;
-    font-weight: normal;
-    font-style: normal; }
-  .carte h4 {
-    font-size: 1.5rem;
-    margin: 0 0.5rem; }
-  .carte h5 {
-    margin: 0;
-    font-weight: bold;
-    white-space: nowrap;
-    position: relative;
-    padding: 0 1rem; }
-    .carte h5::after {
-      content: "";
-      display: block;
-      height: 0.2rem;
-      left: 0;
-      width: 0;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s; }
-    .carte h5:hover::after {
-      width: 100%; }
-  .carte ul {
-    list-style: none;
-    padding-inline-start: 0; }
-  .carte li {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 0.5rem 0;
-    text-align: left; }
-  .carte p {
-    margin: 0 0 0.25rem 0; }
-  .carte span {
-    display: block;
-    padding-left: 1rem;
-    text-align: right; }
-  .carte article {
-    margin-bottom: 3rem; }
+  max-width: 560px;
+  background-color: #f7e0dc;
+  font-family: "Segoe Print";
+  color: #38161a;
+}
+.carte__titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.carte__header {
+  color: #353535;
+  font-family: "Helvetica Neue";
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+.carte__rappel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.carte h2 {
+  margin: 1rem;
+}
+.carte h3, .carte h4 {
+  font-family: "Devonshire";
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 0 1rem 0;
+}
+.carte h4 {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+.carte h5 {
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap;
+  position: relative;
+  padding: 0 1rem;
+}
+.carte h5::after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  left: 0;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.carte h5:hover::after {
+  width: 100%;
+}
+.carte ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.carte li {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+.carte p {
+  margin: 0 0 0.25rem 0;
+}
+.carte span {
+  display: block;
+  padding-left: 1rem;
+  text-align: right;
+}
+.carte article {
+  margin-bottom: 3rem;
+}
 
 .plat-titre {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; }
-  .plat-titre .barre {
-    width: 100%;
-    height: 0.625rem; }
+  justify-content: space-between;
+}
+.plat-titre .barre {
+  width: 100%;
+  height: 0.625rem;
+}
 
 .carte {
-  background-color: #f7e0dc;
-  font-family: "Segoe Print";
-  color: #38161a;
-  min-height: unset; }
-  .carte__titre {
-    margin: 4rem 0; }
-    .carte__titre .croche {
-      width: 3.5rem; }
-  .carte__plats {
-    margin: 0 4rem; }
-  .carte__rappel {
-    margin: 4rem 0; }
-    .carte__rappel .croche {
-      width: 2rem; }
-  .carte p {
-    margin: 0; }
-  .carte span {
-    font-weight: bold; }
+  min-height: unset;
+}
+.carte__titre {
+  margin: 4rem 0;
+}
+.carte__titre .croche {
+  width: 3.5rem;
+}
+.carte__plats {
+  margin: 0 4rem;
+}
+.carte__rappel {
+  margin: 4rem 0;
+}
+.carte__rappel .croche {
+  width: 2rem;
+}
+.carte p {
+  margin: 0;
+}
+.carte span {
+  font-weight: bold;
+}
 
 .plat-titre .barre {
-  fill: #38161a; }
-
-h3, .carte h4 {
-  font-family: "Devonshire"; }
+  fill: #38161a;
+}
 
 h5 {
   min-width: 167px;
-  font-size: 1rem; }
-  h5::after {
-    background: #38161a; }
+  font-size: 1rem;
+}
+h5::after {
+  background: #38161a;
+}
 
 /*# sourceMappingURL=la_note_enchantee.css.map */

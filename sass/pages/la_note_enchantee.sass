@@ -2,10 +2,13 @@
 @import '../abstracts/mixins'
 @import 'cartes'
 
+$color-bg: $lanote-color-bg
+$color-1: $lanote-color-1
+$color-2: $lanote-color-1
+$font-title: $lanote-font-title
+$font-body: $lanote-font-body
+
 .carte
-    background-color: $lanote-color-bg
-    font-family: $lanote-font-body
-    color: $lanote-color-1
     min-height: unset
     &__titre
         margin: 4rem 0
@@ -24,9 +27,8 @@
 
 .plat-titre
     .barre
-        fill: $lanote-color-1
-h3
-    font-family: $lanote-font-title
+        fill: $color-1
+        
 h5
     min-width: 167px
     font-size: 1rem

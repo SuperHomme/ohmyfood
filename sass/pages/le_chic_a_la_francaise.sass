@@ -2,6 +2,12 @@
 @import '../abstracts/mixins'
 @import 'cartes'
 
+$color-bg: $lechic-color-bg
+$color-1: $lechic-color-1
+$color-2: $lechic-color-2
+$font-title: $lechic-font-title
+$font-body: $lechic-font-body
+
 .barre   
     &__droite
         transform: scaleX(-1)
@@ -13,8 +19,6 @@
         fill: rgb(104,81,197)
 
 .carte
-    background-color: $lechic-color-bg
-    font-family: $lechic-font-body
     font-size: 0.75rem
     &__titre
         margin-top: 6rem
@@ -36,7 +40,6 @@
     li
         margin: 1rem 0
     h3
-        font-family: $lechic-font-title
         margin-bottom: 5rem
         @include gradient($lechic-color-1,$lechic-color-2)
     h5

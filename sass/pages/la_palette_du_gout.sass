@@ -2,13 +2,17 @@
 @import '../abstracts/mixins'
 @import 'cartes'
 
+$color-bg: $lapalette-color-bg
+$color-1: $lapalette-color-1
+$color-2: $lapalette-color-2
+$font-title: $lapalette-font-title
+$font-body: $lapalette-font-body
+
 .barre
     &__droite
         transform: scaleX(-1)
 
 .carte
-    background-color: $lapalette-color-bg
-    font-family: $lapalette-font-body
     color: black
     font-size: 0.75rem
     letter-spacing: -0.05rem
@@ -25,7 +29,6 @@
     li
         margin: 1rem 0
     h3
-        font-family: $lapalette-font-title
         margin-bottom: 4rem
         font-weight: normal
         font-size: 3.75rem
@@ -36,17 +39,17 @@
         font-size: 1rem
         font-weight: normal
 
-article h5     
-    &:nth-child(1)
+article    
+    &:nth-child(1) h5
         &::after
             background: rgb(187,119,46)
-    &:nth-child(2)
+    &:nth-child(2) h5
         &::after
             background: linear-gradient(45deg, $lapalette-color-1, $lapalette-color-2)
             background-size: 100%
             -webkit-text-fill-color: transparent
             -moz-text-fill-color: transparent
-    &:nth-child(3)
+    &:nth-child(3) h5
         &::after
             background: #d2009e
       

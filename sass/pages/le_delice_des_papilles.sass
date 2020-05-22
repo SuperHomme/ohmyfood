@@ -2,6 +2,12 @@
 @import '../abstracts/mixins'
 @import 'cartes'
 
+$color-bg: $ledelice-color-bg
+$color-1: $ledelice-color-1
+$color-2: $ledelice-color-2
+$font-title: $ledelice-font-title
+$font-body: $ledelice-font-body
+
 .barre
     &__droite
         transform: scaleX(-1)
@@ -13,8 +19,6 @@
         fill: rgb(74,157,242)
 
 .carte
-    background-color: $ledelice-color-bg
-    font-family: $ledelice-font-body
     color: black
     font-size: 0.8rem
     letter-spacing: -0.05rem
@@ -31,7 +35,6 @@
     li
         margin: 1rem 0
     h3
-        font-family: $ledelice-font-title
         margin-bottom: 4rem
         font-weight: normal
         font-size: 3.75rem
