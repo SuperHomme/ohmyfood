@@ -1,86 +1,145 @@
-/*
-Error: @content may only be used within a mixin.
-        on line 10 of sass/abstracts/_mixins.sass
-        from line 3 of sass/main.sass
+@font-face {
+  font-family: "Segoe Print";
+  src: url("../font/SegoePrint/SegoePrint-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Segoe Print";
+  src: url("../font/SegoePrint/SegoePrint-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../font/HelveticaNeue/HelveticaNeue-Bold-01.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Casus Pro";
+  src: url("../font/CasusPro/CasusPro-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Casus Pro";
+  src: url("../font/CasusPro/CasusPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold; }
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 2px) rotate(2deg); }
+  15% {
+    transform: translate(2px, 4px) rotate(-2deg); }
+  23% {
+    transform: translate(1px, 1px) rotate(1deg); }
+  30% {
+    transform: translate(1px, 1px) rotate(4deg); }
+  46% {
+    transform: translate(1px, 1px) rotate(3deg); }
+  64% {
+    transform: translate(1px, 1px) rotate(6deg); }
+  77% {
+    transform: translate(1px, 1px) rotate(1deg); }
+  85% {
+    transform: translate(1px, 1px) rotate(-1deg); }
+  100% {
+    transform: translate(1px, 1px) rotate(-3deg); } }
+@keyframes points {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(2px); } }
+.btn {
+  background-color: #589d88;
+  border-radius: 0.5rem;
+  margin: 1.5rem;
+  margin-top: 0;
+  padding: 0.5rem 2rem;
+  font-size: 1.75rem;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .btn p {
+    margin: 0;
+    margin-right: 1rem; }
+  .btn .chargement span {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #fccb45;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: points;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; }
+  .btn .chargement span:nth-child(2) {
+    animation-delay: 0.4s; }
+  .btn .chargement span:nth-child(3) {
+    animation-delay: 0.8s; }
 
-5: @mixin respond-to($breakpoint)
-6:     $raw-query: map-get($breakpoints, $breakpoint)
-7: @if $raw-query
-8:     $query:if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query))
-9:     @media #{$query}
-10:         @content
-11: @else
-12:     @error 'No value found for `#{$breakpoint}`. '+ 'Please make sure it is defined in `$breakpoints` map.'
+#gradient-croche-id {
+  --color-stop-1: rgb(221,85,99);
+  --color-stop-2: rgb(233,149,114); }
 
-Backtrace:
-sass/abstracts/_mixins.sass:10
-sass/main.sass:3
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:38:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:67:in `visit_if'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:59:in `visit_root'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:24:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: @content may only be used within a mixin.\A         on line 10 of sass/abstracts/_mixins.sass\A         from line 3 of sass/main.sass\A \A 5: @mixin respond-to($breakpoint)\A 6:     $raw-query: map-get($breakpoints, $breakpoint)\A 7: @if $raw-query\A 8:     $query:if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query))\A 9:     @media #{$query}\A 10:         @content\A 11: @else\A 12:     @error 'No value found for `#{$breakpoint}`. '+ 'Please make sure it is defined in `$breakpoints` map.'"; }
+.croche-note .gradient-croche {
+  fill: url(#gradient-croche-id); }
+
+#gradient-barre-lapalette-id {
+  --color-stop-1: rgb(204,252,143);
+  --color-stop-2: rgb(84,143,59); }
+
+.barre-lapalette .gradient-lapalette {
+  fill: url(#gradient-barre-lapalette-id); }
+
+header, footer {
+  background-color: #589d88;
+  color: #fccb45; }
+  header h1, footer h1 {
+    margin: 2rem 0;
+    letter-spacing: -0.25rem;
+    font-size: 3rem;
+    font-weight: bold; }
+
+footer {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  font-size: 1.25rem;
+  font-weight: normal; }
+  footer a {
+    padding: 1rem; }
+    footer a:hover {
+      animation-name: wiggle;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fccb45;
+  font-family: "Montserrat", sans-serif; }
+  body a {
+    text-decoration: none;
+    color: inherit; }
+
+main {
+  display: flex;
+  width: 80%;
+  margin: auto; }
+
+/*# sourceMappingURL=main.css.map */
