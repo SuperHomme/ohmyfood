@@ -10,9 +10,9 @@ main {
   font-size: 0.7rem;
   min-height: 990px;
   max-width: 560px;
-  background-color: #f7e0dc;
-  font-family: "Segoe Print";
-  color: #38161a;
+  background-color: $color-bg;
+  font-family: $font-body;
+  color: "$color-1";
 }
 .carte__titre {
   display: flex;
@@ -36,7 +36,7 @@ main {
   margin: 1rem;
 }
 .carte h3, .carte h4 {
-  font-family: "Devonshire";
+  font-family: $font-title;
   font-size: 2rem;
   font-weight: normal;
   font-style: normal;
