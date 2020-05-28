@@ -1,12 +1,9 @@
 @keyframes wiggle
-    $exact: 1
     $i: 1
-    @while $i < 100
-        $exact: #{$i * 1%}
-        #{$exact}
-        transform: translate(#{random(4)}px, #{random(4)}px) rotate(#{random(10) - 5}deg)
-        $i: $i + 2
-    
+    @while $i <= 100
+        #{$i}%
+            transform: translate(#{random(4)}px, #{random(4)}px) rotate(#{random(10) - 5}deg)
+        $i: $i + random(17)
 
 @keyframes points
     50%
