@@ -1,9 +1,11 @@
 // animation wiggle totalement randomiser. les chiffres 4 10 5 et 17 sont arbitraires
 @keyframes wiggle
-    $i: 1
+    $i: 0
     @while $i <= 100
+        //lignes de la keyframes : selecteur, puis propriété
         #{$i}%
             transform: translate(#{random(4)}px, #{random(4)}px) rotate(#{random(10) - 5}deg)
+        //incrément randomisé sur 17
         $i: $i + random(17)
 
 // animation point

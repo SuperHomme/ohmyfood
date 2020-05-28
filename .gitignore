@@ -2,3 +2,4 @@ node_modules/
 svg/
 img/creation_elements_graphiques/
 compiler_toutes_pages.command
+sass/shame.sass
