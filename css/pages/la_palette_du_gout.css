@@ -4,6 +4,12 @@ main {
   justify-content: center;
   margin-bottom: 7rem;
 }
+@media screen and (max-width: 700px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 .carte {
   box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
@@ -50,6 +56,19 @@ main {
   position: relative;
   padding: 0 1rem;
 }
+@media screen and (max-width: 425px) {
+  .carte h5 {
+    padding: 0 0 0 0.3rem;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 320px) {
+  .carte h5 {
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+  }
+}
 .carte h5::after {
   content: "";
   display: block;
@@ -64,12 +83,23 @@ main {
 .carte ul {
   list-style: none;
   padding-inline-start: 0;
+  margin: 0 3rem;
+}
+@media screen and (max-width: 425px) {
+  .carte ul {
+    margin: 0 0.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .carte ul {
+    margin: 0;
+  }
 }
 .carte li {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   text-align: left;
 }
 .carte p {
@@ -93,6 +123,17 @@ main {
 .plat-titre .barre {
   width: 100%;
   height: 0.625rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 425px) {
+  .plat-titre .barre__droite {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .plat-titre .barre__gauche {
+    display: none;
+  }
 }
 
 .barre__droite {
@@ -117,12 +158,6 @@ main {
 .carte span {
   font-size: 1.1rem;
 }
-.carte ul {
-  margin: 0 3rem;
-}
-.carte li {
-  margin: 1rem 0;
-}
 .carte h3, .carte h4 {
   margin-bottom: 4rem;
   font-weight: normal;
@@ -142,7 +177,10 @@ main {
 }
 
 article:nth-child(1) h5::after {
-  background: #bb772e;
+  background: linear-gradient(45deg, #548f3b, #ccfc8f);
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 article:nth-child(2) h5::after {
   background: linear-gradient(45deg, #548f3b, #ccfc8f);
@@ -151,7 +189,10 @@ article:nth-child(2) h5::after {
   -moz-text-fill-color: transparent;
 }
 article:nth-child(3) h5::after {
-  background: #d2009e;
+  background: linear-gradient(45deg, #548f3b, #ccfc8f);
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */

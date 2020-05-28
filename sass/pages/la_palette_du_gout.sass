@@ -19,10 +19,6 @@
         padding: 0 1rem
     span
         font-size: 1.1rem
-    ul
-        margin: 0 3rem
-    li
-        margin: 1rem 0
     h3
         margin-bottom: 4rem
         font-weight: normal
@@ -31,13 +27,16 @@
         font-family: map-get($lapalette, font-title)
         +gradient(map-get($lapalette, color-1), map-get($lapalette, color-2))
     h5
-        min-width: 145px
+        min-width: map-get($lapalette, lenght-title)
         font-weight: normal
 
 article    
     &:nth-child(1) h5
         &::after
-            background: rgb(187,119,46)
+            background: linear-gradient(45deg, map-get($lapalette, color-1), map-get($lapalette, color-2))
+            background-size: 100%
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
     &:nth-child(2) h5
         &::after
             background: linear-gradient(45deg, map-get($lapalette, color-1), map-get($lapalette, color-2))
@@ -46,5 +45,8 @@ article
             -moz-text-fill-color: transparent
     &:nth-child(3) h5
         &::after
-            background: #d2009e
+            background: linear-gradient(45deg, map-get($lapalette, color-1), map-get($lapalette, color-2))
+            background-size: 100%
+            -webkit-text-fill-color: transparent
+            -moz-text-fill-color: transparent
       

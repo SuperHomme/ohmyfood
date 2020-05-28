@@ -36,8 +36,13 @@
 main {
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin: 1rem auto 6rem auto;
+}
+@media screen and (max-width: 425px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 section {
@@ -46,9 +51,10 @@ section {
   flex-wrap: wrap;
   margin: 1rem -2rem;
 }
-
-article {
-  overflow: hidden;
+@media screen and (max-width: 425px) {
+  section {
+    margin: 1rem 1rem;
+  }
 }
 
 .zoom {
@@ -72,12 +78,18 @@ article {
 .menus {
   width: 255px;
   height: 400px;
+  overflow: hidden;
   box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   margin: 1rem;
+}
+@media screen and (max-width: 320px) {
+  .menus {
+    margin: 1rem 0;
+  }
 }
 .menus h2 {
   font-weight: normal;

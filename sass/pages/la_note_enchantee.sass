@@ -13,12 +13,18 @@
             width: 3.5rem
     &__plats
         margin: 0 4rem
+        +mq-special(560px)
+            margin: 0 1rem
     &__rappel
         margin: 4rem 0
         .croche
             width: 2rem
     h3
         font-family: map-get($lanote, font-title)
+    ul
+        margin: 0
+    li
+        margin: 0.5rem 0
     p
         margin: 0
     span
@@ -29,6 +35,6 @@
         fill: map-get($lanote, color-1)
         
 h5
-    min-width: map-get($lanote, length-title)
+    min-width: map-get($lanote, lenght-title)
     &::after
         background: map-get($lanote, color-bg)
