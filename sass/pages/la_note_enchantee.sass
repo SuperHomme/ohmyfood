@@ -2,14 +2,13 @@
 @use '../abstracts/mixins'
 @use 'cartes'
 
-$color-bg: $lanote-color-bg
-$color-1: $lanote-color-1
-$color-2: $lanote-color-1
-$font-title: $lanote-font-title
-$font-body: $lanote-font-body
+@debug map-get($font-weights, "medium")
 
 .carte
     min-height: unset
+    background-color: map-get($lanote, "color-bg")
+    font-family: map-get($lanote, "font-body")
+    color: map-get($lanote, "color-1")
     &__titre
         margin: 4rem 0
         .croche
@@ -20,6 +19,8 @@ $font-body: $lanote-font-body
         margin: 4rem 0
         .croche
             width: 2rem
+    h3
+        font-family: map-get($lanote, "font-title")
     p
         margin: 0
     span
@@ -27,10 +28,11 @@ $font-body: $lanote-font-body
 
 .plat-titre
     .barre
-        fill: $color-1
+        fill: map-get($lanote, "color-1")
         
 h5
     min-width: 167px
     font-size: 1rem
     &::after
-        background: $lanote-color-1
+        background: map-get($lanote, "color-bg")
+

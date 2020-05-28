@@ -1,10 +1,9 @@
 /* Error: Undefined variable.
- *    ,
- * 17 |     color: $color-1
- *    |            ^^^^^^^^
- *    '
- *   sass/pages/_cartes.sass 17:12               @use
- *   sass/pages/le_delice_des_papilles.sass 3:1  root stylesheet */
+ *   ,
+ * 5 | $color-bg: $ledelice-color-bg
+ *   |            ^^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass/pages/le_delice_des_papilles.sass 5:12  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 17 \2502      color: $color-1\a    \2502             ^^^^^^^^\a    \2575 \a   sass/pages/_cartes.sass 17:12               @use\a   sass/pages/le_delice_des_papilles.sass 3:1  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 5 \2502  $color-bg: $ledelice-color-bg\a   \2502             ^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/pages/le_delice_des_papilles.sass 5:12  root stylesheet";
 }
