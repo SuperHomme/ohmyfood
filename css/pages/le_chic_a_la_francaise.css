@@ -154,6 +154,18 @@ main {
   font-family: "Casus Pro";
   color: #d68c36;
 }
+.carte h3, .carte h4 {
+  font-family: "Kurale";
+  background: linear-gradient(45deg, #d68c36, #8663f5);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.carte h5 {
+  min-width: 232px;
+}
 .carte__titre {
   margin-top: 6rem;
 }
@@ -173,23 +185,13 @@ main {
 .carte article:nth-child(3) {
   color: #6851c5;
 }
-.carte h3, .carte h4 {
-  font-family: "Kurale";
-}
 .carte span {
   font-size: 1.1rem;
 }
 .carte h3, .carte h4 {
   margin-bottom: 5rem;
-  background: linear-gradient(45deg, #d68c36, #8663f5);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 .carte h5 {
-  min-width: 232px;
   letter-spacing: 0.05rem;
   padding: 0 0.2rem;
 }

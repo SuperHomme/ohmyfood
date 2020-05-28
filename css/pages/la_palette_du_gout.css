@@ -141,10 +141,23 @@ main {
 }
 
 .carte {
-  color: black;
   background-color: #fdfffd;
   font-family: "Segoe Print";
+  color: #548f3b;
+  color: black;
   letter-spacing: -0.05rem;
+}
+.carte h3, .carte h4 {
+  font-family: "Kaushan Script";
+  background: linear-gradient(45deg, #548f3b, #ccfc8f);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.carte h5 {
+  min-width: 145px;
 }
 .carte__titre {
   margin-top: 5rem;
@@ -163,32 +176,12 @@ main {
   font-weight: normal;
   font-size: 3.75rem;
   white-space: initial;
-  font-family: "Kaushan Script";
-  background: linear-gradient(45deg, #548f3b, #ccfc8f);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 .carte h5 {
-  min-width: 145px;
   font-weight: normal;
 }
 
-article:nth-child(1) h5::after {
-  background: linear-gradient(45deg, #548f3b, #ccfc8f);
-  background-size: 100%;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-article:nth-child(2) h5::after {
-  background: linear-gradient(45deg, #548f3b, #ccfc8f);
-  background-size: 100%;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-article:nth-child(3) h5::after {
+h5::after {
   background: linear-gradient(45deg, #548f3b, #ccfc8f);
   background-size: 100%;
   -webkit-text-fill-color: transparent;

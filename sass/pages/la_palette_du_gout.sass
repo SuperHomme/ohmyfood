@@ -7,9 +7,8 @@
         transform: scaleX(-1)
 
 .carte
+    +carte($lapalette)
     color: black
-    background-color: map-get($lapalette, color-bg)
-    font-family: map-get($lapalette, font-body)
     letter-spacing: -0.05rem
     &__titre
         margin-top: 5rem
@@ -24,29 +23,9 @@
         font-weight: normal
         font-size: 3.75rem
         white-space: initial
-        font-family: map-get($lapalette, font-title)
-        +gradient(map-get($lapalette, color-1), map-get($lapalette, color-2))
     h5
-        min-width: map-get($lapalette, lenght-title)
         font-weight: normal
 
-article    
-    &:nth-child(1) h5
-        &::after
-            background: linear-gradient(45deg, map-get($lapalette, color-1), map-get($lapalette, color-2))
-            background-size: 100%
-            -webkit-text-fill-color: transparent
-            -moz-text-fill-color: transparent
-    &:nth-child(2) h5
-        &::after
-            background: linear-gradient(45deg, map-get($lapalette, color-1), map-get($lapalette, color-2))
-            background-size: 100%
-            -webkit-text-fill-color: transparent
-            -moz-text-fill-color: transparent
-    &:nth-child(3) h5
-        &::after
-            background: linear-gradient(45deg, map-get($lapalette, color-1), map-get($lapalette, color-2))
-            background-size: 100%
-            -webkit-text-fill-color: transparent
-            -moz-text-fill-color: transparent
-      
+h5
+    &::after
+        +gradient-underline(map-get($lapalette, color-1), map-get($lapalette, color-2))

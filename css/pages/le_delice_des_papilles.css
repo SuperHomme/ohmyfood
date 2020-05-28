@@ -150,10 +150,23 @@ main {
 }
 
 .carte {
-  letter-spacing: -0.05rem;
   background-color: #f9f9f9;
   font-family: "Segoe Print";
+  color: #002fd2;
+  letter-spacing: -0.05rem;
   color: black;
+}
+.carte h3, .carte h4 {
+  font-family: "Dancing Script";
+  background: linear-gradient(45deg, #002fd2, #398af3);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.carte h5 {
+  min-width: 193px;
 }
 .carte__titre {
   margin-top: 5rem;
@@ -171,16 +184,8 @@ main {
   margin-bottom: 4rem;
   font-weight: normal;
   font-size: 3.75rem;
-  font-family: "Dancing Script";
-  background: linear-gradient(45deg, #002fd2, #398af3);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 .carte h5 {
-  min-width: 193px;
   letter-spacing: 0.05rem;
   font-weight: normal;
 }

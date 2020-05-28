@@ -13,9 +13,8 @@
         fill: rgb(74,157,242)
 
 .carte
+    +carte($ledelice)
     letter-spacing: -0.05rem
-    background-color: map-get($ledelice, color-bg)
-    font-family: map-get($ledelice, font-body)
     color: black
     &__titre
         margin-top: 5rem
@@ -29,10 +28,7 @@
         margin-bottom: 4rem
         font-weight: normal
         font-size: 3.75rem
-        font-family: map-get($ledelice, font-title)
-        +gradient(map-get($ledelice, color-1), map-get($ledelice, color-2))
     h5
-        min-width: map-get($ledelice, lenght-title)
         letter-spacing: 0.05rem
         font-weight: normal
 

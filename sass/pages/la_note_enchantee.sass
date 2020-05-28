@@ -3,10 +3,8 @@
 @import 'cartes'
 
 .carte
+    +carte($lanote)
     min-height: unset
-    background-color: map-get($lanote, color-bg)
-    font-family: map-get($lanote, font-body)
-    color: map-get($lanote, color-1)
     &__titre
         margin: 4rem 0
         .croche
@@ -19,8 +17,6 @@
         margin: 4rem 0
         .croche
             width: 2rem
-    h3
-        font-family: map-get($lanote, font-title)
     ul
         margin: 0
     li
@@ -35,6 +31,5 @@
         fill: map-get($lanote, color-1)
         
 h5
-    min-width: map-get($lanote, lenght-title)
     &::after
-        background: map-get($lanote, color-bg)
+        background: map-get($lanote, color-1)

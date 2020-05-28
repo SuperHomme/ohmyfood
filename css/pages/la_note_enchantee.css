@@ -137,10 +137,22 @@ main {
 }
 
 .carte {
-  min-height: unset;
   background-color: #f7e0dc;
   font-family: "Segoe Print";
   color: #38161a;
+  min-height: unset;
+}
+.carte h3, .carte h4 {
+  font-family: "Devonshire";
+  background: linear-gradient(45deg, #38161a, #38161a);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.carte h5 {
+  min-width: 134px;
 }
 .carte__titre {
   margin: 4rem 0;
@@ -162,9 +174,6 @@ main {
 .carte__rappel .croche {
   width: 2rem;
 }
-.carte h3, .carte h4 {
-  font-family: "Devonshire";
-}
 .carte ul {
   margin: 0;
 }
@@ -182,11 +191,8 @@ main {
   fill: #38161a;
 }
 
-h5 {
-  min-width: 134px;
-}
 h5::after {
-  background: #f7e0dc;
+  background: #38161a;
 }
 
 /*# sourceMappingURL=la_note_enchantee.css.map */
