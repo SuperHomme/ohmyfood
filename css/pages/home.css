@@ -1,45 +1,33 @@
 @keyframes wiggle {
   1% {
-    transform: translate(1px, 1px) rotate(-1deg);
+    transform: translate(4px, 1px) rotate(5deg);
   }
-  2% {
-    transform: translate(2px, 2px) rotate(4deg);
+  12% {
+    transform: translate(4px, 2px) rotate(5deg);
   }
-  7% {
-    transform: translate(1px, 1px) rotate(3deg);
+  19% {
+    transform: translate(4px, 2px) rotate(4deg);
   }
-  8% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  16% {
-    transform: translate(2px, 4px) rotate(1deg);
-  }
-  26% {
-    transform: translate(4px, 4px) rotate(0deg);
-  }
-  37% {
-    transform: translate(2px, 2px) rotate(3deg);
-  }
-  43% {
-    transform: translate(1px, 3px) rotate(2deg);
-  }
-  45% {
+  31% {
     transform: translate(3px, 3px) rotate(1deg);
   }
-  54% {
-    transform: translate(1px, 3px) rotate(-1deg);
+  42% {
+    transform: translate(3px, 4px) rotate(2deg);
   }
-  60% {
-    transform: translate(3px, 2px) rotate(1deg);
+  58% {
+    transform: translate(1px, 2px) rotate(3deg);
   }
-  69% {
-    transform: translate(1px, 3px) rotate(-4deg);
+  70% {
+    transform: translate(2px, 2px) rotate(0deg);
   }
-  73% {
-    transform: translate(2px, 3px) rotate(-2deg);
+  79% {
+    transform: translate(2px, 2px) rotate(2deg);
   }
-  90% {
-    transform: translate(2px, 4px) rotate(-2deg);
+  94% {
+    transform: translate(4px, 4px) rotate(-3deg);
+  }
+  100% {
+    transform: translate(1px, 2px) rotate(3deg);
   }
 }
 @keyframes points {
@@ -117,10 +105,10 @@ section {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
-.menus__la_note_enchantee {
+.menus__lanote {
   background-color: #f7e0dc;
 }
-.menus__la_note_enchantee h2 {
+.menus__lanote h2 {
   font-family: "Devonshire";
   background: linear-gradient(45deg, #38161a, #38161a);
   background-size: 100%;
@@ -129,14 +117,14 @@ section {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menus__la_note_enchantee p {
+.menus__lanote p {
   font-family: "Segoe Print";
   color: #38161a;
 }
-.menus__le_chic_a_la_francaise {
+.menus__lechic {
   background-color: #fdf5fd;
 }
-.menus__le_chic_a_la_francaise h2 {
+.menus__lechic h2 {
   font-family: "Kurale";
   background: linear-gradient(45deg, #d68c36, #8663f5);
   background-size: 100%;
@@ -145,14 +133,14 @@ section {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menus__le_chic_a_la_francaise p {
+.menus__lechic p {
   font-family: "Casus Pro";
   color: #d68c36;
 }
-.menus__le_delice_des_papilles {
+.menus__ledelice {
   background-color: #f9f9f9;
 }
-.menus__le_delice_des_papilles h2 {
+.menus__ledelice h2 {
   font-family: "Dancing Script";
   background: linear-gradient(45deg, #002fd2, #398af3);
   background-size: 100%;
@@ -161,14 +149,14 @@ section {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menus__le_delice_des_papilles p {
+.menus__ledelice p {
   font-family: "Segoe Print";
   color: #063eff;
 }
-.menus__la_palette_du_gout {
+.menus__lapalette {
   background-color: #fdfffd;
 }
-.menus__la_palette_du_gout h2 {
+.menus__lapalette h2 {
   font-family: "Kaushan Script";
   background: linear-gradient(45deg, #548f3b, #ccfc8f);
   background-size: 100%;
@@ -177,7 +165,7 @@ section {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menus__la_palette_du_gout p {
+.menus__lapalette p {
   font-family: "Segoe Print";
   color: #69b34a;
 }

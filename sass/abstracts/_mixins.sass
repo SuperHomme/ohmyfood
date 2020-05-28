@@ -6,6 +6,17 @@
     -webkit-text-fill-color: transparent
     -moz-text-fill-color: transparent
 
+=menus-auto($menus)
+    @each $nm-menu, $menu in $menus
+        &__#{$nm-menu}
+            background-color: map-get($menu, color-bg)
+            h2
+                font-family: map-get($menu, font-title)
+                +gradient(map-get($menu, color-1), map-get($menu, color-2))
+            p
+                font-family: map-get($menu, font-body)
+                color: lighten(map-get($menu, color-1), map-get($menu, lighten-sbttle))
+
 =mq-mobileS
     @media screen and (max-width: map-get($breakpoints, mobileS))
         @content
