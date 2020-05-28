@@ -1,27 +1,22 @@
-@use '../abstracts/variables'
-@use '../abstracts/mixins'
-@use 'cartes'
-
-$color-bg: $ledelice-color-bg
-$color-1: $ledelice-color-1
-$color-2: $ledelice-color-2
-$font-title: $ledelice-font-title
-$font-body: $ledelice-font-body
+@import '../abstracts/variables'
+@import '../abstracts/mixins'
+@import 'cartes'
 
 .barre
     &__droite
         transform: scaleX(-1)
     &--bleu-100
-        fill: $ledelice-color-1
+        fill: map-get($ledelice, color-1)
     &--bleu-66
         fill: rgb(44,114,235)
     &--bleu-33
         fill: rgb(74,157,242)
 
 .carte
-    color: black
-    font-size: 0.8rem
     letter-spacing: -0.05rem
+    background-color: map-get($ledelice, color-bg)
+    font-family: map-get($ledelice, font-body)
+    color: black
     &__titre
         margin-top: 5rem
     &__plats
@@ -38,23 +33,20 @@ $font-body: $ledelice-font-body
         margin-bottom: 4rem
         font-weight: normal
         font-size: 3.75rem
-        +gradient($ledelice-color-1, $ledelice-color-2)
+        font-family: map-get($ledelice, font-title)
+        +gradient(map-get($ledelice, color-1), map-get($ledelice, color-2))
     h5
-        min-width: 210px
+        min-width: map-get($ledelice, lenght-title)
         letter-spacing: 0.05rem
-        font-size: 1rem
         font-weight: normal
 
-article h5     
-    &:nth-child(1)
+article    
+    &:nth-child(1) h5
         &::after
-            background: rgb(187,119,46)
-    &:nth-child(2)
+            background: map-get($ledelice, color-1)
+    &:nth-child(2) h5
         &::after
-            background: linear-gradient(45deg, $ledelice-color-1, $ledelice-color-2)
-            background-size: 100%
-            -webkit-text-fill-color: transparent
-            -moz-text-fill-color: transparent
-    &:nth-child(3)
+            background: rgb(44,114,235)
+    &:nth-child(3) h5
         &::after
-            background: #d2009e
+            background: rgb(74,157,242)

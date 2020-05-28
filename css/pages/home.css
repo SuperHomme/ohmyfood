@@ -1,17 +1,158 @@
-/* Error: Undefined variable.
- *    ,
- * 52 |         background-color: $lanote-color-bg
- *    |                           ^^^^^^^^^^^^^^^^
- *    '
- *   sass/pages/home.sass 52:27  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 52 \2502          background-color: $lanote-color-bg\a    \2502                            ^^^^^^^^^^^^^^^^\a    \2575 \a   sass/pages/home.sass 52:27  root stylesheet";
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 2px) rotate(2deg);
+  }
+  15% {
+    transform: translate(2px, 4px) rotate(-2deg);
+  }
+  23% {
+    transform: translate(1px, 1px) rotate(1deg);
+  }
+  30% {
+    transform: translate(1px, 1px) rotate(4deg);
+  }
+  46% {
+    transform: translate(1px, 1px) rotate(3deg);
+  }
+  64% {
+    transform: translate(1px, 1px) rotate(6deg);
+  }
+  77% {
+    transform: translate(1px, 1px) rotate(1deg);
+  }
+  85% {
+    transform: translate(1px, 1px) rotate(-1deg);
+  }
+  100% {
+    transform: translate(1px, 1px) rotate(-3deg);
+  }
 }
+@keyframes points {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(2px);
+  }
+}
+main {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem -2rem;
+}
+
+article {
+  overflow: hidden;
+}
+
+.zoom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 1s ease, opacity 1s ease;
+}
+.zoom:hover {
+  transform: scale(1.4);
+  opacity: 0.5;
+}
+
+.croche {
+  width: 2rem;
+}
+
+.menus {
+  width: 255px;
+  height: 400px;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
+.menus h2 {
+  font-weight: normal;
+  width: 180px;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.menus p {
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.menus__la_note_enchantee {
+  background-color: #f7e0dc;
+}
+.menus__la_note_enchantee h2 {
+  font-family: "Devonshire";
+  background: linear-gradient(45deg, #38161a, #38161a);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.menus__la_note_enchantee p {
+  font-family: "Segoe Print";
+  color: #38161a;
+}
+.menus__le_chic_a_la_francaise {
+  background-color: #fdf5fd;
+}
+.menus__le_chic_a_la_francaise h2 {
+  font-family: "Kurale";
+  background: linear-gradient(45deg, #d68c36, #8663f5);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.menus__le_chic_a_la_francaise p {
+  font-family: "Casus Pro";
+  color: #d68c36;
+}
+.menus__le_delice_des_papilles {
+  background-color: #f9f9f9;
+}
+.menus__le_delice_des_papilles h2 {
+  font-family: "Dancing Script";
+  background: linear-gradient(45deg, #002fd2, #398af3);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.menus__le_delice_des_papilles p {
+  font-family: "Segoe Print";
+  color: #063eff;
+}
+.menus__la_palette_du_gout {
+  background-color: #fdfffd;
+}
+.menus__la_palette_du_gout h2 {
+  font-family: "Kaushan Script";
+  background: linear-gradient(45deg, #548f3b, #ccfc8f);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.menus__la_palette_du_gout p {
+  font-family: "Segoe Print";
+  color: #69b34a;
+}
+
+/*# sourceMappingURL=home.css.map */

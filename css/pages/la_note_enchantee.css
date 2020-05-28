@@ -1,68 +1,137 @@
-/*
-Error: Undefined variable: "$font-weights".
-        on line 5 of sass/pages/la_note_enchantee.sass
+main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
 
-1: @use '../abstracts/variables'
-2: @use '../abstracts/mixins'
-3: @use 'cartes'
-4: 
-5: @debug map-get($font-weights, "medium")
-6: 
-7: .carte
-8:     min-height: unset
-9:     background-color: map-get($lanote, "color-bg")
-10:     font-family: map-get($lanote, "font-body")
+.carte {
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+  font-size: 0.75rem;
+  min-height: 990px;
+  max-width: 560px;
+}
+.carte__titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.carte__header {
+  color: #353535;
+  font-family: "Helvetica Neue";
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+.carte__rappel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.carte h2 {
+  margin: 1rem;
+}
+.carte h3, .carte h4 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 0 1rem 0;
+}
+.carte h4 {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+.carte h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  white-space: nowrap;
+  position: relative;
+  padding: 0 1rem;
+}
+.carte h5::after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  left: 0;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.carte h5:hover::after {
+  width: 100%;
+}
+.carte ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.carte li {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+.carte p {
+  margin: 0 0 0.25rem 0;
+}
+.carte span {
+  display: block;
+  padding-left: 1rem;
+  text-align: right;
+}
+.carte article {
+  margin-bottom: 3rem;
+}
 
-Backtrace:
-sass/pages/la_note_enchantee.sass:5
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:182:in `perform_arg'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:129:in `block in _perform'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:129:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:129:in `each_with_index'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:129:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:129:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:129:in `_perform'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:202:in `visit_debug'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$font-weights\".\A         on line 5 of sass/pages/la_note_enchantee.sass\A \A 1: @use '../abstracts/variables'\A 2: @use '../abstracts/mixins'\A 3: @use 'cartes'\A 4: \A 5: @debug map-get($font-weights, \"medium\")\A 6: \A 7: .carte\A 8:     min-height: unset\A 9:     background-color: map-get($lanote, \"color-bg\")\A 10:     font-family: map-get($lanote, \"font-body\")"; }
+.plat-titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.plat-titre .barre {
+  width: 100%;
+  height: 0.625rem;
+}
+
+.carte {
+  min-height: unset;
+  background-color: #f7e0dc;
+  font-family: "Segoe Print";
+  color: #38161a;
+}
+.carte__titre {
+  margin: 4rem 0;
+}
+.carte__titre .croche {
+  width: 3.5rem;
+}
+.carte__plats {
+  margin: 0 4rem;
+}
+.carte__rappel {
+  margin: 4rem 0;
+}
+.carte__rappel .croche {
+  width: 2rem;
+}
+.carte h3, .carte h4 {
+  font-family: "Devonshire";
+}
+.carte p {
+  margin: 0;
+}
+.carte span {
+  font-weight: bold;
+}
+
+.plat-titre .barre {
+  fill: #38161a;
+}
+
+h5::after {
+  background: #f7e0dc;
+}
+
+/*# sourceMappingURL=la_note_enchantee.css.map */

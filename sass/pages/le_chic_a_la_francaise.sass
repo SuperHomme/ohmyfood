@@ -1,12 +1,6 @@
-@use '../abstracts/variables'
-@use '../abstracts/mixins'
-@use 'cartes'
-
-$color-bg: $lechic-color-bg
-$color-1: $lechic-color-1
-$color-2: $lechic-color-2
-$font-title: $lechic-font-title
-$font-body: $lechic-font-body
+@import '../abstracts/variables'
+@import '../abstracts/mixins'
+@import 'cartes'
 
 .barre   
     &__droite
@@ -19,7 +13,9 @@ $font-body: $lechic-font-body
         fill: rgb(104,81,197)
 
 .carte
-    font-size: 0.75rem
+    background-color: map-get($lechic, color-bg)
+    font-family: map-get($lechic, font-body)
+    color: map-get($lechic, color-1)
     &__titre
         margin-top: 6rem
     &__plats
@@ -33,6 +29,8 @@ $font-body: $lechic-font-body
             color: rgb(156,107,150)
         &:nth-child(3)
             color: rgb(104,81,197)
+    h3
+        font-family: map-get($lechic, font-title)
     span
         font-size: 1.1rem
     ul
@@ -41,24 +39,20 @@ $font-body: $lechic-font-body
         margin: 1rem 0
     h3
         margin-bottom: 5rem
-        +gradient($lechic-color-1,$lechic-color-2)
+        +gradient(map-get($lechic, color-1), map-get($lechic, color-2))
     h5
-        min-width: 232px
+        min-width: map-get($lechic, color-1)
         letter-spacing: 0.05rem
-        font-size: 1rem
         padding: 0 0.2rem
 
-article h5     
-    &:nth-child(1)
+article    
+    &:nth-child(1) h5
         &::after
             background: rgb(187,119,46)
-    &:nth-child(2)
+    &:nth-child(2) h5
         &::after
-            background: linear-gradient(45deg, $lechic-color-1, $lechic-color-2)
-            background-size: 100%
-            -webkit-text-fill-color: transparent
-            -moz-text-fill-color: transparent
-    &:nth-child(3)
+            background: rgb(156,107,150)
+    &:nth-child(3) h5
         &::after
-            background: #d2009e
+            background: rgb(104,81,197)
         

@@ -1,17 +1,172 @@
-/* Error: Undefined variable.
- *   ,
- * 5 | $color-bg: $lechic-color-bg
- *   |            ^^^^^^^^^^^^^^^^
- *   '
- *   sass/pages/le_chic_a_la_francaise.sass 5:12  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 5 \2502  $color-bg: $lechic-color-bg\a   \2502             ^^^^^^^^^^^^^^^^\a   \2575 \a   sass/pages/le_chic_a_la_francaise.sass 5:12  root stylesheet";
+main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
 }
+
+.carte {
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+  font-size: 0.75rem;
+  min-height: 990px;
+  max-width: 560px;
+}
+.carte__titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.carte__header {
+  color: #353535;
+  font-family: "Helvetica Neue";
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+.carte__rappel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.carte h2 {
+  margin: 1rem;
+}
+.carte h3, .carte h4 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 0 1rem 0;
+}
+.carte h4 {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+.carte h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  white-space: nowrap;
+  position: relative;
+  padding: 0 1rem;
+}
+.carte h5::after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  left: 0;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.carte h5:hover::after {
+  width: 100%;
+}
+.carte ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.carte li {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+.carte p {
+  margin: 0 0 0.25rem 0;
+}
+.carte span {
+  display: block;
+  padding-left: 1rem;
+  text-align: right;
+}
+.carte article {
+  margin-bottom: 3rem;
+}
+
+.plat-titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.plat-titre .barre {
+  width: 100%;
+  height: 0.625rem;
+}
+
+.barre__droite {
+  transform: scaleX(-1);
+}
+.barre--orange {
+  fill: #bb772e;
+}
+.barre--bleu {
+  fill: #9c6b96;
+}
+.barre--violet {
+  fill: #6851c5;
+}
+
+.carte {
+  background-color: #fdf5fd;
+  font-family: "Casus Pro";
+  color: #d68c36;
+}
+.carte__titre {
+  margin-top: 6rem;
+}
+.carte__plats {
+  margin: 1rem 0 8rem 0;
+}
+.carte article {
+  padding: 0 1rem;
+  margin-bottom: 4rem;
+}
+.carte article:nth-child(1) {
+  color: #bb772e;
+}
+.carte article:nth-child(2) {
+  color: #9c6b96;
+}
+.carte article:nth-child(3) {
+  color: #6851c5;
+}
+.carte h3, .carte h4 {
+  font-family: "Kurale";
+}
+.carte span {
+  font-size: 1.1rem;
+}
+.carte ul {
+  margin: 0 3rem;
+}
+.carte li {
+  margin: 1rem 0;
+}
+.carte h3, .carte h4 {
+  margin-bottom: 5rem;
+  background: linear-gradient(45deg, #d68c36, #8663f5);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.carte h5 {
+  min-width: #d68c36;
+  letter-spacing: 0.05rem;
+  padding: 0 0.2rem;
+}
+
+article:nth-child(1) h5::after {
+  background: #bb772e;
+}
+article:nth-child(2) h5::after {
+  background: #9c6b96;
+}
+article:nth-child(3) h5::after {
+  background: #6851c5;
+}
+
+/*# sourceMappingURL=le_chic_a_la_francaise.css.map */
