@@ -1,4 +1,0 @@
-@keyframes wiggle
-    @for $i from 0 through 100
-        #{$i * 1%}
-            transform: translate(#{random(4)}px, #{random(4)}px) rotate(#{random(10) - 5}deg)
