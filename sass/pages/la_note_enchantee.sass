@@ -4,32 +4,32 @@
 
 .carte
     +carte($lanote)
-    min-height: unset
     &__titre
-        margin: 4rem 0
         .croche
             width: 3.5rem
-    &__plats
-        margin: 0 4rem
-        +mq-special(560px)
-            margin: 0 1rem
     &__rappel
-        margin: 4rem 0
+        font-family: map-get($lanote, font-title)
+        font-size: 2rem
         .croche
             width: 2rem
-    ul
-        margin: 0
     li
         margin: 0.5rem 0
-    p
-        margin: 0
     span
+        font-size: 0.75rem
         font-weight: bold
 
-.plat-titre
-    .barre
-        fill: map-get($lanote, color-1)
-        
+// soulignement titre
 h5
     &::after
         background: map-get($lanote, color-1)
+
+// barres d'ornement
+.plat-titre
+    .barre
+        fill: map-get($lanote, color-1)
+        &__gauche
+            margin-left: 3rem
+            +mq-mobileL
+                margin-left: 0.5rem
+        &__droite
+            margin-right: 3rem

@@ -3,15 +3,15 @@
 
 //paramètrage du dégradé sur la croche en svg 
 #gradient-croche-id
-    --color-stop-1: map-get($lanote-croche, color-1)
-    --color-stop-2: map-get($lanote-croche, color-2)
+    --color-stop-1: #{map-get($lanote-croche, color-1)}
+    --color-stop-2: #{map-get($lanote-croche, color-2)}
 .croche-note .gradient-croche
     fill: url(#gradient-croche-id)
 
 //paramètrage du dégradé sur la barre du menu La palette du goût
 #gradient-barre-lapalette-id
-    --color-stop-1: map-get($lapalette, color-1)
-    --color-stop-2: map-get($lapalette, color-2)
+    --color-stop-1: #{map-get($lapalette, color-1)}
+    --color-stop-2: #{map-get($lapalette, color-2)}
 
 .barre-lapalette .gradient-lapalette
     fill: url(#gradient-barre-lapalette-id)

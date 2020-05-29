@@ -2,39 +2,19 @@
 @import '../abstracts/mixins'
 @import 'cartes'
 
-.barre   
-    &__droite
-        transform: scaleX(-1)
-    &--orange
-        fill: nth($lechic-gdt, 1)
-    &--bleu
-        fill: nth($lechic-gdt, 2)
-    &--violet
-        fill: nth($lechic-gdt, 3)
-
 .carte
     +carte($lechic)
-    &__titre
-        margin-top: 6rem
-    &__plats
-        margin: 1rem 0 8rem 0
+    h5
+        letter-spacing: 0.05rem
     article
-        padding: 0 1rem
-        margin-bottom: 4rem
         &:nth-child(1)
             color: nth($lechic-gdt, 1)
         &:nth-child(2)
             color: nth($lechic-gdt, 2)
         &:nth-child(3)
             color: nth($lechic-gdt, 3)
-    span
-        font-size: 1.1rem
-    h3
-        margin-bottom: 5rem
-    h5
-        letter-spacing: 0.05rem
-        padding: 0 0.2rem
 
+// soulignement titre
 article    
     &:nth-child(1) h5
         &::after
@@ -45,4 +25,15 @@ article
     &:nth-child(3) h5
         &::after
             background: nth($lechic-gdt, 3)
+
+// barres d'ornement  
+.barre   
+    &__droite
+        transform: scaleX(-1)
+    &--orange
+        fill: nth($lechic-gdt, 1)
+    &--bleu
+        fill: nth($lechic-gdt, 2)
+    &--violet
+        fill: nth($lechic-gdt, 3)
         

@@ -2,30 +2,20 @@
 @import '../abstracts/mixins'
 @import 'cartes'
 
-.barre
-    &__droite
-        transform: scaleX(-1)
-
 .carte
     +carte($lapalette)
     color: black
     letter-spacing: -0.05rem
-    &__titre
-        margin-top: 5rem
-    &__plats
-        margin: 1rem 0 8rem 0
-    article
-        padding: 0 1rem
-    span
-        font-size: 1.1rem
     h3
-        margin-bottom: 4rem
-        font-weight: normal
         font-size: 3.75rem
         white-space: initial
-    h5
-        font-weight: normal
 
+// soulignement titre
 h5
     &::after
         +gradient-underline(map-get($lapalette, color-1), map-get($lapalette, color-2))
+
+// barres d'ornement
+.barre
+    &__droite
+        transform: scaleX(-1)

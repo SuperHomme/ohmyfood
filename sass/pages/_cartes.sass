@@ -1,5 +1,5 @@
-@use '../abstracts/variables'
-@use '../abstracts/mixins'
+@import '../abstracts/variables'
+@import '../abstracts/mixins'
 
 main
     flex-direction: column
@@ -17,16 +17,22 @@ main
     font-size: 0.75rem
     min-height: 990px
     max-width: 560px
-    &__titre
-        display: flex
-        flex-direction: column
-        align-items: center
-        margin-top: 1rem
+    padding: 0 1rem
     &__header
         color: rgb(53, 53, 53)
         font-family: "Helvetica Neue"
         font-size: 1.25rem
         margin-top: 1rem
+    &__titre
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin-top: 1rem
+        height: 14rem
+    &__plats
+        article
+            margin-bottom: 5rem
     &__rappel
         display: flex
         flex-direction: row
@@ -40,7 +46,6 @@ main
         font-style: normal
         margin: 0 0 1rem 0
     h4
-        @extend h3
         font-size: 1.5rem
         margin: 0 0.5rem
     h5
@@ -79,16 +84,16 @@ main
         display: flex
         align-items: flex-end
         justify-content: space-between
-        margin: 01rem 0
+        margin: 1rem 0
         text-align: left
     p
-        margin: 0 0 0.25rem 0
+            margin: 0
+            padding-bottom: 0.1rem
     span
-        display: block
-        padding-left: 1rem
-        text-align: right
-    article
-        margin-bottom: 3rem
+            display: block
+            padding-left: 1rem
+            text-align: right
+            font-size: 1.1rem
 
 .plat-titre
     display: flex

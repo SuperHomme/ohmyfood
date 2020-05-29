@@ -21,18 +21,24 @@ main {
   font-size: 0.75rem;
   min-height: 990px;
   max-width: 560px;
-}
-.carte__titre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
+  padding: 0 1rem;
 }
 .carte__header {
   color: #353535;
   font-family: "Helvetica Neue";
   font-size: 1.25rem;
   margin-top: 1rem;
+}
+.carte__titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  height: 14rem;
+}
+.carte__plats article {
+  margin-bottom: 5rem;
 }
 .carte__rappel {
   display: flex;
@@ -43,7 +49,7 @@ main {
 .carte h2 {
   margin: 1rem;
 }
-.carte h3, .carte h4 {
+.carte h3 {
   font-size: 2rem;
   font-weight: normal;
   font-style: normal;
@@ -108,15 +114,14 @@ main {
   text-align: left;
 }
 .carte p {
-  margin: 0 0 0.25rem 0;
+  margin: 0;
+  padding-bottom: 0.1rem;
 }
 .carte span {
   display: block;
   padding-left: 1rem;
   text-align: right;
-}
-.carte article {
-  margin-bottom: 3rem;
+  font-size: 1.1rem;
 }
 
 .plat-titre {
@@ -141,10 +146,6 @@ main {
   }
 }
 
-.barre__droite {
-  transform: scaleX(-1);
-}
-
 .carte {
   background-color: #fdfffd;
   font-family: "Segoe Print";
@@ -152,7 +153,7 @@ main {
   color: black;
   letter-spacing: -0.05rem;
 }
-.carte h3, .carte h4 {
+.carte h3 {
   font-family: "Kaushan Script";
   background: linear-gradient(45deg, #548f3b, #ccfc8f);
   background-size: 100%;
@@ -164,26 +165,9 @@ main {
 .carte h5 {
   min-width: 145px;
 }
-.carte__titre {
-  margin-top: 5rem;
-}
-.carte__plats {
-  margin: 1rem 0 8rem 0;
-}
-.carte article {
-  padding: 0 1rem;
-}
-.carte span {
-  font-size: 1.1rem;
-}
-.carte h3, .carte h4 {
-  margin-bottom: 4rem;
-  font-weight: normal;
+.carte h3 {
   font-size: 3.75rem;
   white-space: initial;
-}
-.carte h5 {
-  font-weight: normal;
 }
 
 h5::after {
@@ -191,6 +175,10 @@ h5::after {
   background-size: 100%;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.barre__droite {
+  transform: scaleX(-1);
 }
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */

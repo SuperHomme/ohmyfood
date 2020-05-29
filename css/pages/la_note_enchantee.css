@@ -21,18 +21,24 @@ main {
   font-size: 0.75rem;
   min-height: 990px;
   max-width: 560px;
-}
-.carte__titre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
+  padding: 0 1rem;
 }
 .carte__header {
   color: #353535;
   font-family: "Helvetica Neue";
   font-size: 1.25rem;
   margin-top: 1rem;
+}
+.carte__titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  height: 14rem;
+}
+.carte__plats article {
+  margin-bottom: 5rem;
 }
 .carte__rappel {
   display: flex;
@@ -43,7 +49,7 @@ main {
 .carte h2 {
   margin: 1rem;
 }
-.carte h3, .carte h4 {
+.carte h3 {
   font-size: 2rem;
   font-weight: normal;
   font-style: normal;
@@ -108,15 +114,14 @@ main {
   text-align: left;
 }
 .carte p {
-  margin: 0 0 0.25rem 0;
+  margin: 0;
+  padding-bottom: 0.1rem;
 }
 .carte span {
   display: block;
   padding-left: 1rem;
   text-align: right;
-}
-.carte article {
-  margin-bottom: 3rem;
+  font-size: 1.1rem;
 }
 
 .plat-titre {
@@ -145,9 +150,8 @@ main {
   background-color: #f7e0dc;
   font-family: "Segoe Print";
   color: #38161a;
-  min-height: unset;
 }
-.carte h3, .carte h4 {
+.carte h3 {
   font-family: "Devonshire";
   background: linear-gradient(45deg, #38161a, #38161a);
   background-size: 100%;
@@ -159,45 +163,41 @@ main {
 .carte h5 {
   min-width: 134px;
 }
-.carte__titre {
-  margin: 4rem 0;
-}
 .carte__titre .croche {
   width: 3.5rem;
 }
-.carte__plats {
-  margin: 0 4rem;
-}
-@media screen and (max-width: 560px) {
-  .carte__plats {
-    margin: 0 1rem;
-  }
-}
 .carte__rappel {
-  margin: 4rem 0;
+  font-family: "Devonshire";
+  font-size: 2rem;
 }
 .carte__rappel .croche {
   width: 2rem;
 }
-.carte ul {
-  margin: 0;
-}
 .carte li {
   margin: 0.5rem 0;
 }
-.carte p {
-  margin: 0;
-}
 .carte span {
+  font-size: 0.75rem;
   font-weight: bold;
+}
+
+h5::after {
+  background: #38161a;
 }
 
 .plat-titre .barre {
   fill: #38161a;
 }
-
-h5::after {
-  background: #38161a;
+.plat-titre .barre__gauche {
+  margin-left: 3rem;
+}
+@media screen and (max-width: 425px) {
+  .plat-titre .barre__gauche {
+    margin-left: 0.5rem;
+  }
+}
+.plat-titre .barre__droite {
+  margin-right: 3rem;
 }
 
 /*# sourceMappingURL=la_note_enchantee.css.map */
