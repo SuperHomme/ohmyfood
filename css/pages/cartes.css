@@ -1,0 +1,149 @@
+main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+@media screen and (max-width: 700px) {
+  main {
+    width: 100%;
+    margin: 0 0 7rem 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  main {
+    margin-bottom: 10rem;
+  }
+}
+
+.carte {
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+  font-size: 0.75rem;
+  min-height: 990px;
+  max-width: 560px;
+  padding: 0 1rem;
+}
+.carte__header {
+  color: #353535;
+  font-family: "Helvetica Neue";
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+.carte__titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  height: 14rem;
+}
+.carte__plats article {
+  margin-bottom: 5rem;
+}
+.carte__rappel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.carte h2 {
+  margin: 1rem;
+}
+.carte h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 0 1rem 0;
+}
+.carte h4 {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+.carte h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  white-space: nowrap;
+  position: relative;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 425px) {
+  .carte h5 {
+    padding: 0 0 0 0.3rem;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 320px) {
+  .carte h5 {
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+  }
+}
+.carte h5::after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  left: 0;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.carte h5:hover::after {
+  width: 100%;
+}
+.carte ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 3rem;
+}
+@media screen and (max-width: 425px) {
+  .carte ul {
+    margin: 0 0.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .carte ul {
+    margin: 0;
+  }
+}
+.carte li {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 1rem 0;
+  text-align: left;
+}
+.carte p {
+  margin: 0;
+  padding-bottom: 0.1rem;
+}
+.carte span {
+  display: block;
+  padding-left: 1rem;
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.plat-titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.plat-titre .barre {
+  width: 100%;
+  height: 0.625rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 425px) {
+  .plat-titre .barre__droite {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .plat-titre .barre__gauche {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=cartes.css.map */
